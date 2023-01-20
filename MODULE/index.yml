@@ -1,5 +1,8 @@
 - name: DAS S
   path: DAS_S
+  graphics:
+    - front.png
+    - back.png
   tracks:
   - file: INTRO.S3M
     length: '1:58'
@@ -43,6 +46,8 @@
 
 - name: GAEA
   path: GAEA
+  graphics:
+    - front.png
   tracks:
   - file: INTRO.S3M
     name: 'intro'
@@ -75,8 +80,12 @@
     length: '4:24'
     name: sweet simplicity
 
-- name: Culmination of Drum&Base
+- name: culmination
   path: CULMINAT
+  graphics:
+    - front.png
+    - booklet.png
+    - back.png
   tracks:
   - file: INTRO.S3M
     length: '3:46'
@@ -112,21 +121,25 @@
     length: '5:55'
     name: vergessen
 
-- name: LEBEN
-  path: Das Leben vor dem Tod
+- path: LEBEN
+  name: das leben vor dem tod
+  graphics:
+    - front.png
+    - booklet.png
+    - back.png
   tracks:
   - file: INTRO.S3M
     length: '3:23'
     name: ein vorspiel
   - file: VERSUCH.S3M
     length: '7:46'
-    name: versuchsobjekt des ...
+    name: versuchsobjekt des lebens
   - file: UEBER.S3M
     length: '5:50'
     name: "Überfahrung"
   - file: HIERARCH.S3M
     length: '7:50'
-    name: hierarchie des ...
+    name: hierarchie des begreifens
   - file: HAZE.S3M
     length: '6:08'
     name: the haze
@@ -135,7 +148,7 @@
     length: 4:04
   - file: MEINE_LI.S3M
     length: '4:10'
-    name: meine ewige liebe ...
+    name: meine ewige liebe ist mutiert zu tiefem hass
   - file: VERG_RMX.S3M
     length: '6:35'
     name: vergessen (rmx)
@@ -150,7 +163,7 @@
     name: '---'
   - file: OBERFL.S3M
     length: '4:25'
-    name: "oberflächliche liebe"
+    name: oberflächliche liebe
   - file: OUTRO.S3M
     length: '2:59'
     name: OUTRO I
@@ -158,13 +171,15 @@
     length: '2:17'
     name: OUTRO ][
   - file: HAZEMIX.S3M
-    name: haze mix
+    name: the haze (rmx)
   - file: RUND.S3M
     length: '2:59'
     name: bonustrack
 
 - name: mictlantecuhtlis
   path: MICT
+  graphics:
+    - front.png
   tracks:
   - file: INTRO.S3M
     length: '3:38'
@@ -229,6 +244,10 @@
 
 - path: INSTANZ
   name: neue instanz
+  graphics:
+    - front.png
+    - booklet.png
+    - back.png
   tracks:
   - file: INTRO.S3M
     length: '4:51'
@@ -351,6 +370,9 @@
 
 - path: ATOMIK
   name: Atomik Mikro Kosmos
+  graphics:
+    - front.png
+    - back.png
   tracks:
   - file: LOFIBAS1.S3M
     length: '7:44'
