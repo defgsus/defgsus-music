@@ -1,0 +1,8 @@
+env/
+venv/
+*.pyc
+__pycache__/
+.idea/
+
+scratchpad/
+*.TIF

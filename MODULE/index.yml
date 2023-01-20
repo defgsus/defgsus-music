@@ -1,0 +1,1076 @@
+- name: DAS S
+  path: DAS_S
+  tracks:
+  - file: INTRO.S3M
+    length: '1:58'
+    name: ein vorspiel
+  - file: DDEGS.S3M
+    length: '4:44'
+    name: 'loved: d.d.e.g.s.'
+  - file: IHDGS.S3M
+    length: '4:38'
+    name: i.h.d.g.s
+  - file: UNBEAT.S3M
+    length: '5:06'
+    name: brok'n
+  - file: SALT.S3M
+    length: '3:14'
+    name: saltflaxs
+  - file: LECKA.S3M
+    length: '4:23'
+    name: lecka musik
+  - file: DAKOS.S3M
+    length: '4:00'
+    name: das konzipierte chaos
+  - file: BEAT.S3M
+    length: '3:31'
+    name: VEB schraube
+  - file: BLA.S3M
+    length: '3:48'
+    name: akm< dulap0l &duljia @
+  - file: GRABED.S3M
+    length: '5:57'
+    name: choosen & grabed
+  - file: GROOVE.S3M
+    length: '3:11'
+    name: travelence
+  - file: MASHINE.S3M
+    length: '4:23'
+    name: die kontrastma schine
+  - file: OUTRO.S3M
+    length: '1:15'
+    name: lezztendlich
+
+- name: GAEA
+  path: GAEA
+  tracks:
+  - file: INTRO.S3M
+    name: 'intro'
+  - file: ATOM.S3M
+    length: '1:38'
+    name: atom
+  - file: GOLD.S3M
+    length: '5:03'
+    name: goldrausch
+  - file: HRABAN.S3M
+    name: 'hraban'
+  - file: KARA.S3M
+    length: '11:15'
+    name: kara
+  - file: KARA_RMX.S3M
+    length: '9:05'
+    name: kara
+  - file: ROT.S3M
+    name: 'kara'
+  - file: SCHELFH.S3M
+    length: '6:24'
+    name: schelfheim
+  - file: STAHL.S3M
+    length: '3:27'
+    name: stahldorf
+  - file: STAHL(R).S3M
+    length: '3:27'
+    name: stahldorf (rmx)
+  - file: SWEET.S3M
+    length: '4:24'
+    name: sweet simplicity
+
+- name: Culmination of Drum&Base
+  path: CULMINAT
+  tracks:
+  - file: INTRO.S3M
+    length: '3:46'
+    name: ein vorspiel
+  - file: DDEGS.S3M
+    length: '5:07'
+    name: d.d.e.g.s.
+  - file: IHDGS.S3M
+    length: '5:42'
+    name: i.h.d.g.s
+  - file: DDEGS_X1.S3M
+    length: '6:32'
+    name: unnamed RMX
+  - file: HARMONIE.S3M
+    length: '11:09'
+    name: kulturmenschen
+  - file: LAST.S3M
+    length: '5:58'
+    name: "gr\x81n"
+  - file: 4UVAMP.S3M
+    length: '8:33'
+    name: 4U VAMP
+  - file: LXGENMI.S3M
+    length: '6:00'
+    name: LXG. ENMI
+  - file: LXGENMIR.S3M
+    length: '3:57'
+    name: exxpedition
+  - file: POTENT.S3M
+    length: '7:35'
+    name: deplaced potential
+  - file: FORGOT.S3M
+    length: '5:55'
+    name: vergessen
+
+- name: LEBEN
+  path: Das Leben vor dem Tod
+  tracks:
+  - file: INTRO.S3M
+    length: '3:23'
+    name: ein vorspiel
+  - file: VERSUCH.S3M
+    length: '7:46'
+    name: versuchsobjekt des ...
+  - file: UEBER.S3M
+    length: '5:50'
+    name: "Überfahrung"
+  - file: HIERARCH.S3M
+    length: '7:50'
+    name: hierarchie des ...
+  - file: HAZE.S3M
+    length: '6:08'
+    name: the haze
+  - file: MARKTPLA.S3M
+    name: boris b sein marktplazz
+    length: 4:04
+  - file: MEINE_LI.S3M
+    length: '4:10'
+    name: meine ewige liebe ...
+  - file: VERG_RMX.S3M
+    length: '6:35'
+    name: vergessen (rmx)
+  - file: (C)LAW.S3M
+    length: '7:28'
+    name: (c)law
+  - file: MOLLI.S3M
+    length: '6:01'
+    name: o-saft-molli
+  - file: D&B.S3M
+    length: '2:54'
+    name: '---'
+  - file: OBERFL.S3M
+    length: '4:25'
+    name: "oberflächliche liebe"
+  - file: OUTRO.S3M
+    length: '2:59'
+    name: OUTRO I
+  - file: OUTLOUDE.S3M
+    length: '2:17'
+    name: OUTRO ][
+  - file: HAZEMIX.S3M
+    name: haze mix
+  - file: RUND.S3M
+    length: '2:59'
+    name: bonustrack
+
+- name: mictlantecuhtlis
+  path: MICT
+  tracks:
+  - file: INTRO.S3M
+    length: '3:38'
+    name: intro (cliff vs. joey)
+  - file: MILCH.S3M
+    length: '6:13'
+    name: milch
+  - file: ENDZEIT.S3M
+    length: '7:25'
+    name: der gedanke an das ende is monoton
+  - file: BEWUST.S3M
+    length: '10:27'
+    name: hero mother
+  - file: COLUM1.S3M
+    length: '3:08'
+    name: columbo I
+  - file: ALTE.S3M
+    length: '8:05'
+    name: "die alte bäckerei"
+  - file: ALH84001.S3M
+    length: '4:46'
+    name: alh-84001
+  - file: MICTL.S3M
+    length: '5:43'
+    name: mictlantecuhtlis
+  - file: TIER.S3M
+    length: '5:16'
+    name: exhibition ins tierreich
+  - file: ALTE1.S3M
+    length: '7:40'
+    name: tonatiuh
+  - file: COLUM2.S3M
+    length: '2:39'
+    name: columbo II
+  - file: WOLFGANG.S3M
+    length: '5:30'
+    name: wolfgang
+  - file: TENNIS.S3M
+    length: '5:30'
+    name: tennis obsessions
+  - file: BRIDGE.S3M
+    length: '3:00'
+    name: "löwenzahn"
+  - file: GOLD.S3M
+    length: '5:03'
+    name: goldrausch
+  - file: GRUEN.S3M
+    length: '12:09'
+    name: "grün (RMX)"
+  - file: OUTRO.S3M
+    length: '6:11'
+    name: outro
+  - file: END1.S3M
+    length: '7:25'
+    name: der gedanke an das ende ist mononto (RMX)
+  - file: INTROVER.S3M
+    length: '2:54'
+    name: introvertiert & schnee
+  - file: ISOTOPE.S3M
+    length: '10:25'
+    name: isotope
+
+- path: INSTANZ
+  name: neue instanz
+  tracks:
+  - file: INTRO.S3M
+    length: '4:51'
+    name: my toxic classmate
+  - file: FLICKY.S3M
+    length: '5:46'
+    name: fick die prodigy
+  - file: CONF.S3M
+    length: '5:43'
+    name: conflagration of insanity
+  - file: BACKDOWN.S3M
+    length: '7:19'
+    name: bring 'em back down
+  - file: FAETHM.S3M
+    length: '10:21'
+    name: faethm
+  - file: LIQUID.S3M
+    length: '7:28'
+    name: lickit liquid
+  - file: ICHLEBE.S3M
+    length: '4:07'
+    name: ich lebe - und doch bin ich nicht tot
+  - file: SPRING.S3M
+    length: '5:48'
+    name: joe noex
+  - file: FICK.S3M
+    length: '7:29'
+    name: fick die prodigy
+  - file: KRAZZ.S3M
+    length: '6:29'
+    name: der fehlende zusammenhalt
+  - file: BRENNE.S3M
+    length: '6:24'
+    name: brenne
+  - file: SCHANELL.S3M
+    length: '3:02'
+    name: schanell
+  - file: WIRKLICH.S3M
+    length: '4:09'
+    name: die wirklichkeit verzerrt
+  - file: UDO.S3M
+    length: '4:14'
+    name: griechischer wein
+  - file: HENRY.S3M
+    length: '5:06'
+    name: return of henry bauers
+
+- path: ALONE
+  name: ALONE
+  tracks:
+  - file: 98.S3M
+    name: ''
+  - file: ABSTURZ.S3M
+    name: ''
+  - file: ALONE.S3M
+    name: ''
+  - file: B&B.S3M
+    name: ''
+  - file: BEAUTY.S3M
+    name: alonesom beauty
+  - file: D&B.S3M
+    name: ''
+  - file: DAST.S3M
+    name: ''
+  - file: DEPRESS.S3M
+    length: '10:13'
+    name: ein happen depress...
+  - file: DUG(MOR).S3M
+    name: ''
+  - file: DUG.S3M
+    length: '9:39'
+    name: "DUG"
+  - file: DUG(R).S3M
+    length: '10:14'
+    name: "DUG (RMX)"
+  - file: DUG(R1).S3M
+    length: '10:14'
+    name: "DUG (RMX)"
+  - file: EIS.S3M
+    length: '7:11'
+    name: visionäre eislandschaft
+  - file: FALL.S3M
+    name: ''
+  - file: FREMD.S3M
+    name: entfremdet
+  - file: GIRL.S3M
+    name: ''
+  - file: ICH.S3M
+    length: '10:37'
+    name: ich
+  - file: INTRO.S3M
+    length: '8:44'
+    name: intro
+  - file: KRIMI.S3M
+    name: ''
+  - file: OUTRO.S3M
+    name: ''
+  - file: PAPPE.S3M
+    name: die staats-pappe
+  - file: PARALLEL.S3M
+    length: '11:23'
+    name: parallel
+  - file: RAUB.S3M
+    length: '12:44'
+    name: ein rauptier
+  - file: RAUSCH.S3M
+    length: '6:13'
+    name: flucht im rausch
+  - file: REGEN.S3M
+    length: '9:15'
+    name: regen
+  - file: RIDER.S3M
+    name: ''
+  - file: STAB.S3M
+    name: ''
+  - file: STAB1.S3M
+    name: ''
+  - file: STAB2.S3M
+    name: ''
+
+- path: ATOMIK
+  name: Atomik Mikro Kosmos
+  tracks:
+  - file: LOFIBAS1.S3M
+    length: '7:44'
+    name: based on lofi I
+  - file: LOFIBAS2.S3M
+    length: '9:55'
+    name: based on lofi II
+  - file: LOFIBAS3.S3M
+    length: '7:37'
+    name: based on lofi III
+  - file: KOMPLEX.S3M
+    length: '6:15'
+    name: einfach bis komplex
+  - file: STOCK_I.S3M
+    length: '13:36'
+    name: stockhausen I
+  - file: NEW.S3M
+    length: '4:05'
+    name: new entry
+  - file: STOCK_II.S3M
+    length: '10:30'
+    name: stockhausen II
+  - file: BRAIN.S3M
+    length: '10:53'
+    name: lsd brain meltdown
+  - file: PACK.S3M
+    length: '7:25'
+    name: faschistenpack
+  - file: SAMBA.S3M
+    length: '15:37'
+    name: tussis mit depressiven gesichtsausdruck
+  - file: SAMBA1.S3M
+    length: '9:24'
+    name: tussis mit depressiven gesichtsausdruck
+  - file: MILCH(R).S3M
+    length: '10:56'
+    name: milch (rmx)
+  - file: OUTRO.S3M
+    length: '7:43'
+    name: outro
+  - file: D&B.S3M
+    length: '6:49'
+    name: space invaders
+  - file: M(R)_1.S3M
+    length: '13:52'
+    name: milch (RMX II)
+
+- path: ATOMIK/MILCH
+  name: Atomik Mikro Kosmos / MILCH
+  tracks:
+  - file: INTRO.S3M
+    length: '14:43'
+    name: intro
+  - file: MILCH.S3M
+    length: '6:13'
+    name: milch
+  - file: M(R)_1.S3M
+    length: '10:56'
+    name: milch (rmx)
+  - file: INTER(1).S3M
+    length: '2:49'
+    name: interlude
+  - file: M(R)_2.S3M
+    length: '13:52'
+    name: milch (RMX II)
+  - file: NETZ(1).S3M
+    length: '11:55'
+    name: network
+  - file: EXISTENT.S3M
+    length: '8:46'
+    name: existent
+  - file: EXPLODIA.S3M
+    length: '9:19'
+    name: tennis obessions (explodiat)
+  - file: M(R)_3.S3M
+    length: '11:04'
+    name: milch (RMX III)
+  - file: END_R(1).S3M
+    length: '9:52'
+    name: der gedanke an das ende ist monoton (RMX)
+  - file: INTER(2).S3M
+    length: '5:49'
+    name: interlude II
+  - file: END_R(2).S3M
+    length: '12:17'
+    name: der gedanke an das ende ist monoton (RMXII)
+  - file: NETZ(2).S3M
+    length: '12:51'
+    name: network down
+  - file: NETZ(3).S3M
+    length: '14:59'
+    name: network extra down
+  - file: NETZ(4).S3M
+    length: '11:08'
+    name: network inclompete
+  - file: TIER(1).S3M
+    length: '7:59'
+    name: exhibition ins tierreich (RMX)
+
+- path: FILMTHEA
+  name: filmtheater
+  tracks:
+  - file: GEGEN.S3M
+    length: '7:21'
+    name: gegen
+  - file: GWOLKEN.S3M
+    name: 'gegenwolken                '
+  - file: LIE_INT.S3M
+    name: um mitzuteilen, dass alles einer lüge gleichkommt (intro)
+    length: "2:29"
+  - file: LIE.S3M
+    name: um mitzuteilen, dass alles einer lüge gleichkommt
+    length: "10:28"
+  - file: MONO.S3M
+    length: '7:27'
+    name: mono{ hoast }
+  - file: NONAME.S3M
+    length: '9:14'
+    name: ''
+  - file: NOONE.S3M
+    name: noone but me
+  - file: WOLKEN.S3M
+    length: '8:49'
+    name: wolken
+  - file: WRONG.S3M
+    length: '6:02'
+    name: could this be wrong?
+
+- path: FILMTHEA/I
+  name: filmtheater I
+  tracks:
+  - file: INTRO_1.S3M
+    length: '6:01'
+    name: intro
+  - file: ALONE.S3M
+    length: '7:55'
+    name: alone in the room
+  - file: DXM.S3M
+    name: dxm
+  - file: EINBRUCH.S3M
+    length: '8:26'
+    name: einbruch
+  - file: INNEN.S3M
+    length: '12:25'
+    name: innen
+  - file: EXPECTED.S3M
+    length: '7:40'
+    name: not what you expected
+  - file: GLAUBT.S3M
+    length: '8:34'
+    name: manche menschen...
+  - file: HERBST.S3M
+    length: '6:13'
+    name: kinderherbst
+  - file: IDIOTS.S3M
+    length: '8:28'
+    name: idiots and monkeys &
+  - file: MASKS.S3M
+    length: '8:20'
+    name: idiots with monkey faces
+  - file: MASSES.S3M
+    length: '6:08'
+    name: far from the masses
+  - file: TILOMAT.S3M
+    name: tilomat
+
+- path: FILMTHEA/II
+  name: filmtheater II
+  tracks:
+  - file: PROLOG.S3M
+    length: '7:02'
+    name: prolog
+  - file: INTRO_2.S3M
+    length: '1:22'
+    name: intro
+  - file: BLIND.S3M
+    name: die augen eines blinden kuhzüchters
+    length: 8:30
+  - file: BLIND1.S3M
+    name: die augen eines blinden kuhzüchters
+    length: 9:05
+  - file: BLIND2.S3M
+    name: die augen eines blinden kuhzüchters
+    length: 6:21
+  - file: CRY.S3M
+    length: '5:24'
+    name: i cry for all of us
+  - file: HATE.S3M
+    name: sometimes, i hate...
+  - file: NO.S3M
+    length: '3:42'
+    name: 'no'
+  - file: KNOW.S3M
+    length: '7:02'
+    name: but kNOw
+  - file: POINT.S3M
+    length: '8:49'
+    name: the point of self...
+  - file: TONTOT.S3M
+    length: '8:57'
+    name: tontot
+  - file: SNOW.S3M
+    length: '11:56'
+    name: electric snow
+  - file: PROLOG1.S3M
+    length: '7:47'
+    name: prolog (epilog)
+
+- path: FILMTHEA/III
+  name: filmtheater III
+  tracks:
+  - file: ANDYW.S3M
+    length: '7:31'
+    name: velvet warhole
+  - file: ANDYW1.S3M
+    length: '7:31'
+    name: velvet warhole (RMX)
+  - file: BASCHRO.S3M
+    name: ''
+  - file: CHEMIE.S3M
+    name: ''
+  - file: DEVIAT.S3M
+    name: ''
+  - file: DROGE.S3M
+    name: ''
+  - file: DROGE1.S3M
+    name: ''
+  - file: INTRO_3.S3M
+    name: die augen eines blinden kuhzüchters
+    length: 6:43
+  - file: KNALL.S3M
+    length: '7:31'
+    name: knallfolie
+  - file: LIE_RMX.S3M
+    name: um mitzuteilen, dass alles einer lüge gleichkommt
+    length: 10:28
+  - file: MENTAL.S3M
+    name: mental changes
+  - file: PILZ.S3M
+    name: ''
+  - file: SEHEN.S3M
+    length: '6:41'
+    name: trotzdem sehen
+  - file: SEHEN1.S3M
+    length: '6:41'
+    name: trotzdem sehen
+  - file: SOUNNGG.S3M
+    name: der song der zuviel wußte
+    length: 15:38
+  - file: SYSTEM.S3M
+    length: '5:00'
+    name: system der macht
+  - file: TECH.S3M
+    name: ''
+  - file: WORTE.S3M
+    name: ''
+
+- path: FILMTHEA/MUTATION
+  name: filmtheater MUTATION
+  tracks:
+  - file: 120127.S3M
+    name: ''
+  - file: ALKOHOL.S3M
+    length: '6:28'
+    name: ALKOHOL
+  - file: BINE.S3M
+    name: ''
+  - file: BINE1.S3M
+    name: ''
+  - file: CHAMBER.S3M
+    name: chambers of mutation
+  - file: CH_EPIL.S3M
+    length: 0:58
+    name: chambers of mutation (epilog)
+  - file: CHILL.S3M
+    name: ''
+  - file: DAB.S3M
+    name: ''
+  - file: DUBLIN.S3M
+    name: dublin lines
+  - file: DUBLIN1.S3M
+    name: dublin lines
+  - file: FAETHM.S3M
+    name: faethm with hoast
+  - file: FAT.S3M
+    length: '5:04'
+    name: ''
+  - file: FLOYD.S3M
+    name: ''
+  - file: HIPHOP.S3M
+    length: '7:44'
+    name: hiphop
+  - file: HNO.S3M
+    name: ''
+  - file: HOLZ.S3M
+    length: '5:35'
+    name: holz ist
+  - file: INTRO.S3M
+    name: intro
+  - file: JG.S3M
+    name: ''
+  - file: KANTE.S3M
+    length: '6:18'
+    name: maschinenkante
+  - file: MEM.S3M
+    name: ''
+  - file: MESC.S3M
+    length: '7:37'
+    name: mesc.
+  - file: MODUS.S3M
+    name: modus
+  - file: MONKEY.S3M
+    name: monkeys have reached...
+  - file: MUTAT1.S3M
+    name: ''
+  - file: NEUE.S3M
+    name: die neue traurigkeit
+  - file: SAMBA.S3M
+    name: ''
+  - file: SOME.S3M
+    name: ''
+  - file: STRIKT.S3M
+    length: '6:57'
+    name: strikt rythmus
+  - file: STRIK_U.S3M
+    name: strikt rythmus (untanz)
+  - file: WOHN.S3M
+    name: ''
+
+- path: HOAST
+  name: hoast
+  tracks:
+  - file: INTRO.S3M
+    length: '9:24'
+    name: intro
+  - file: 99.S3M
+    length: '6:33'
+    name: zukunftsvisionen
+  - file: BLACK.S3M
+    length: '8:26'
+    name: schwarz
+  - file: DOORS.S3M
+    length: '2:05'
+    name: doors of perception
+  - file: EIS.S3M
+    length: '7:11'
+    name: visionäre eislandschaft
+  - file: FORST(1).S3M
+    length: '8:32'
+    name: das forst verhängnis
+  - file: FORST(2).S3M
+    length: '10:22'
+    name: das forst verhängniss
+  - file: FORST(3).S3M
+    length: '10:20'
+    name: das forst verhängnisss
+  - file: GRASS.S3M
+    length: '8:20'
+    name: grass
+  - file: HOAST.S3M
+    length: '11:20'
+    name: ich sah hoast
+  - file: KIFF.S3M
+    length: '8:37'
+    name: der mariujahna-konsum als basis der überlegung
+  - file: MICRO.S3M
+    length: '8:56'
+    name: micro
+  - file: SCHLUESS.S3M
+    name: ''
+  - file: SHORT.S3M
+    name: short waylayed freedom
+  - file: TRICK.S3M
+    name: ''
+
+- path: HOAST/TASSE
+  ordering: null
+  name: hoast (TASSE)
+  tracks:
+  - file: INTRO.S3M
+    name: 'intro'
+  - file: EIS.S3M
+    length: '8:37'
+    name: visionäre eiswelt
+  - file: EXTRA.S3M
+    name: intuitive extraordinations
+    length: 8:44
+  - file: KATS.S3M
+    name: flirting of three fat cats
+    length: 8:43
+  - file: KIFF(IN).S3M
+    length: '3:07'
+    name: der mariujahna-konsum als basis der überlegung (intro)
+  - file: KIFF.S3M
+    length: '13:26'
+    name: der mariujahna-konsum als basis der überlegung
+  - file: MICR(IN).S3M
+    length: '3:44'
+    name: micro (intro)
+  - file: MICRO.S3M
+    length: '11:07'
+    name: micro
+  - file: SCREAM.S3M
+    length: '8:35'
+    name: scream what you scream
+  - file: SIMPEL.S3M
+    length: '8:07'
+    name: der name ist zu simpel
+  - file: TRICK.S3M
+    length: '7:49'
+    name: the trick
+
+- path: TRIBB
+  name: tribbrulr
+  tracks:
+  - file: ANATOM.S3M
+    name: anatomie eines kuhzüchters
+    length: 14:36
+  - file: ATROPIN.S3M
+    name: ''
+  - file: BEAUTY.S3M
+    length: '16:59'
+    name: mono-beauty
+  - file: BEAUTY2.S3M
+    name: stereo-beauty
+  - file: BEAUTY3.S3M
+    length: '18:19'
+    name: fraktal-beauty
+  - file: FAQ.S3M
+    length: '12:36'
+    name: FAQ
+  - file: FAT.S3M
+    name: fat freddy's cat
+  - file: FAT1.S3M
+    length: '18:14'
+    name: fat freddy's cat II
+  - file: FUCK.S3M
+    length: '8:29'
+    name: fuck you _mother
+  - file: GROOVE.S3M
+    name: ''
+  - file: INTROVER.S3M
+    length: '2:54'
+    name: introvertiert & schnee
+  - file: JOE(BYE!.S3M
+    length: '10:02'
+    name: joe noex introducing
+  - file: JOE(RMX).S3M
+    length: '10:02'
+    name: joe noex introducing
+  - file: LABOR.S3M
+    length: '12:05'
+    name: nie wieder <labor>
+  - file: LSD(1).S3M
+    name: ''
+  - file: LSD_J(1).S3M
+    length: '11:37'
+    name: lsd_junkie (PART I)
+  - file: MICT.S3M
+    name: ''
+  - file: MODULA.S3M
+    name: die wunderbare welt der frequenzmodulation
+    length: 11:44
+  - file: MUCKE(1).S3M
+    length: '13:44'
+    name: keine mucke zum verstehn
+  - file: MUCKE(2).S3M
+    length: '13:44'
+    name: keine mucke zum verstehn
+  - file: NARCOTIC.S3M
+    length: '14:23'
+    name: the narcotic choice
+  - file: NARCO(R).S3M
+    length: '12:55'
+    name: the narcotic RMX
+  - file: NETZ(R2).S3M
+    length: '13:14'
+    name: network down (rMx)
+  - file: OUTRO.S3M
+    length: '8:34'
+    name: outro
+  - file: OUTROII.S3M
+    name: ''
+  - file: STORY.S3M
+    length: '11:34'
+    name: itz a true story
+  - file: TOXIC(R).S3M
+    length: '10:06'
+    name: my toxic classmate(R)
+  - file: TRIBB.S3M
+    length: '15:29'
+    name: tribbrulR
+  - file: TRIP1.S3M
+    name: ''
+  - file: TRIP2.S3M
+    length: '7:56'
+    name: the animal in
+  - file: TRIPPA.S3M
+    length: '12:36'
+    name: durch das wurmloch gegangenes trippaar
+  - file: TSCHAEZZ.S3M
+    name: ''
+  - file: ZLETCH(R.S3M
+    length: '12:21'
+    name: die wechselwirkung von alk und chemie
+  - file: ZLETCH.S3M
+    length: '12:21'
+    name: die wechselwirkung von alk und chemie
+
+- name: TRASH1
+  ordering: null
+  path: TRASH1
+  tracks:
+  - file: BASE.S3M
+    name: ''
+  - file: BASE1.S3M
+    name: ''
+  - file: BASE2.S3M
+    name: ''
+  - file: BASE3.S3M
+    name: ''
+  - file: BAU.S3M
+    length: '2:25'
+    name: die baustelle
+  - file: BODEN.S3M
+    length: '3:00'
+    name: kreativer nährboden
+  - file: DDEGS_X.S3M
+    name: ''
+  - file: FAHRRAD.S3M
+    length: '5:26'
+    name: ich und main fahrrad
+  - file: FAHRRAD1.S3M
+    length: '5:26'
+    name: ich und main fahrrad
+  - file: HOWZ2.S3M
+    length: '1:15'
+    name: ''
+  - file: HOWZ4.S3M
+    length: '2:41'
+    name: ''
+  - file: HOWZ6.S3M
+    length: '2:02'
+    name: ''
+  - file: IPANEMA.S3M
+    name: ''
+  - file: LALALA.S3M
+    length: '7:08'
+    name: ''
+  - file: LSD.S3M
+    length: '10:59'
+    name: intro
+  - file: OHNE_BL.S3M
+    length: '5:41'
+    name: ohne bleiche
+  - file: RMX_GRAB.S3M
+    length: '3:55'
+    name: grabed & rmXed
+  - file: SCHMANT.S3M
+    name: ''
+  - file: SEHNSUCH.S3M
+    length: '5:37'
+    name: sehnsucht nach dem ...
+  - file: STILLE.S3M
+    name: IMPM
+  - file: STRANGE.S3M
+    name: ''
+  - file: TOT.S3M
+    length: '8:09'
+    name: tot durch ersticken
+  - file: VERS2.S3M
+    length: '6:06'
+    name: ''
+  - file: ZEIT.S3M
+    length: '5:55'
+    name: in einer zeit vor...
+
+- name: TRASH1/MICT
+  ordering: null
+  path: TRASH1/MICT
+  tracks:
+  - file: ALT.S3M
+    name: sonata
+  - file: DREAD.S3M
+    name: ''
+  - file: DREADBAS.S3M
+    name: ''
+  - file: MICT.S3M
+    name: ''
+  - file: SATIVA.S3M
+    name: sativa                 9.38
+  - file: SATIVA2.S3M
+    length: '7:56'
+    name: sativa II
+
+- name: TRASH2
+  ordering: null
+  path: TRASH2
+  tracks:
+  - file: BOI.S3M
+    name: die boikrupp
+  - file: BREAK.S3M
+    length: '7:29'
+    name: fick die prodigy
+  - file: BREAK1.S3M
+    length: '6:11'
+    name: outro
+  - file: COOL.S3M
+    name: ''
+  - file: COOL1.S3M
+    name: ''
+  - file: COOL2.S3M
+    name: ''
+  - file: D&B.S3M
+    name: ''
+  - file: D&B1.S3M
+    name: ''
+  - file: DEF1.S3M
+    name: ''
+  - file: DEF2.S3M
+    name: ''
+  - file: EXP.S3M
+    name: ''
+  - file: FAT1.S3M
+    length: '18:14'
+    name: fat freddy's cat II
+  - file: GMF.S3M
+    name: ''
+  - file: GUIT.S3M
+    name: ''
+  - file: GUIT1.S3M
+    name: ''
+  - file: HACHT.S3M
+    name: ''
+  - file: INTRO.S3M
+    name: ''
+  - file: INTRO2.S3M
+    name: ''
+  - file: KDFJHG.S3M
+    name: ''
+  - file: KDJFH.S3M
+    name: ''
+  - file: KIKI.S3M
+    name: ''
+  - file: KLAKK.S3M
+    name: ''
+  - file: KLHJ.S3M
+    name: ''
+  - file: LATIFA.S3M
+    name: ''
+  - file: MELOD.S3M
+    name: ''
+  - file: MELT.S3M
+    name: ''
+  - file: MEN1.S3M
+    name: ''
+  - file: NAMELESS.S3M
+    name: ''
+  - file: OLDSCHOO.S3M
+    name: ''
+  - file: OUTRO.S3M
+    name: ''
+  - file: OUTRO1.S3M
+    name: ''
+  - file: P&M.S3M
+    name: ''
+  - file: RELAX.S3M
+    name: ''
+  - file: SCHANELL.S3M
+    name: ''
+  - file: SHORT.S3M
+    name: '7:13'
+  - file: SJBFSDFJ.S3M
+    name: '13:50'
+  - file: SLEEP.S3M
+    name: ''
+  - file: SLOW.S3M
+    name: ''
+  - file: SOFT.S3M
+    name: ''
+  - file: SPACE.S3M
+    name: ''
+  - file: SPEECH.S3M
+    name: ''
+  - file: STRING.S3M
+    name: ''
+  - file: TECCA.S3M
+    name: ''
+  - file: WUT.S3M
+    name: wut und so
+
+- name: TRASH3
+  ordering: null
+  path: TRASH3
+  tracks:
+  - file: DISKO.S3M
+    name: ''
+  - file: FORST(2).S3M
+    length: '10:22'
+    name: das forst verhängniss
+  - file: LSD_J(2).S3M
+    name: ''
+  - file: MICT1.S3M
+    name: ''
+  - file: NETZ(R1).S3M
+    length: '13:51'
+    name: network (rmx)
+  - file: OUTROIII.S3M
+    name: ''
+  - file: PROPAN.S3M
+    name: ''
+  - file: SMOOTH.S3M
+    name: ''
+  - file: STORY(A).S3M
+    name: ''
+  - file: TEKK.S3M
+    name: ''
+  - file: THESAME.S3M
+    name: always walk on the same
+  - file: TJA.S3M
+    name: ''
+  - file: XTEND.S3M
+    name: xtended night reality
