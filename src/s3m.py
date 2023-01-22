@@ -25,6 +25,8 @@ NOTE_NAMES = (
 
 class S3m:
 
+    character_encoding = "CP437"
+
     class Header:
         pass
 
@@ -61,11 +63,14 @@ class S3m:
     def dump(self, file: Optional[IO[str]] = None):
         print(self.header.title, file=file)
         for inst in self.instruments:
-            print(f"  {inst.type} {inst.title} {inst.filename} {inst.volume} {inst.length}", file=file)
+            print(f"  {inst.type} {inst.title:28} {inst.volume or 0:2} {inst.length or 0:5}", file=file)
+
+    def _to_string(self, b: bytes) -> str:
+        return b.decode(self.character_encoding).strip("\0")
 
     def _read_header(self, buf: bytes):
         m = self.header
-        m.title = struct.unpack_from('<28s', buf, 0)[0].decode('latin1').strip('\0')
+        m.title = self._to_string(struct.unpack_from('<28s', buf, 0)[0])
         m.numorders, m.numinstruments, m.numpatterns, m.flags, m.trackerversion, m.sampletype \
             = struct.unpack_from('<6H', buf, 32)
         m.globalvolume, m.initialspeed, m.initialtempo, m.mastervolume, \
@@ -89,12 +94,28 @@ class S3m:
         self.instruments = []
         for ptr in self.header.ptrinstruments:
             inst = self.Instrument()
-            inst.type = struct.unpack_from('<B', buf, ptr)[0]
-            inst.filename = struct.unpack_from(
-                '<12s', buf, ptr + 1
-            )[0].decode('latin1').strip('\0')
+            inst.type = struct.unpack_from('B', buf, ptr)[0]
+            inst.filename = self._to_string(struct.unpack_from('12s', buf, ptr + 1)[0])
 
-            if inst.type >= 2:
+            if inst.type == 0:  # empty instrument
+                inst.title = self._to_string(struct.unpack_from('28s', buf, ptr + 49)[0])
+
+            elif inst.type == 1:  # sample-based
+                pos = ptr + 13
+                sample_ptr1 = struct.unpack_from('B', buf, pos)[0]
+                sample_ptr2 = struct.unpack_from('<H', buf, pos + 1)[0]
+                inst.sample_ptr = (sample_ptr1 << 16) + sample_ptr2
+                pos += 3
+
+                inst.length, inst.loop_start, inst.loop_end = struct.unpack_from('<3I', buf, pos)
+                pos += 12
+                inst.volume, _reserved, inst.pack, inst.flags = struct.unpack_from('4B', buf, pos)
+                pos += 4
+                inst.c2spd = struct.unpack_from('<I', buf, pos)
+                pos += 4 + 12
+                inst.title = self._to_string(struct.unpack_from('28s', buf, pos)[0])
+
+            elif inst.type >= 2:  # OPL
                 oplvalues = struct.unpack_from('<12B', buf, ptr + 16)
                 inst.feedback = oplvalues[10] >> 1
                 inst.connection = oplvalues[10] & 1 != 0
@@ -114,24 +135,7 @@ class S3m:
                     op.waveselect = oplvalues[offset+8]
 
                 inst.volume, inst.c2spd = struct.unpack_from('<B3xI', buf, ptr + 28)
-                inst.title = struct.unpack_from(
-                    '28s', buf, ptr + 36
-                )[0].strip(b'\0')
-
-            elif inst.type == 1:
-                pos = ptr + 13
-                sample_ptr1 = struct.unpack_from('<B', buf, pos)[0]
-                sample_ptr2 = struct.unpack_from('<H', buf, pos + 1)[0]
-                inst.sample_ptr = (sample_ptr1 << 16) + sample_ptr2
-                pos += 3
-
-                inst.length, inst.loop_start, inst.loop_end = struct.unpack_from('<3I', buf, pos)
-                pos += 12
-                inst.volume, _reserved, inst.pack, inst.flags = struct.unpack_from('4B', buf, pos)
-                pos += 4
-                inst.c2spd = struct.unpack_from('<I', buf, pos)
-                pos += 4 + 12
-                inst.title = struct.unpack_from('28s', buf, pos)[0].decode("latin1").strip("\0")
+                inst.title = self._to_string(struct.unpack_from('28s', buf, ptr + 36)[0])
 
             self.instruments.append(inst)
 

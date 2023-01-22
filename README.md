@@ -10,8 +10,8 @@ so actually, i had quite a nice setup.
 To *release an album*, the songs were played in the 
 [Inertia Player](https://www.pouet.net/prod.php?which=29208) and recorded to 90 minutes cassette tapes,
 relentlessly twisting the volume knob just slightly to simulate a kind of mastering. All of these tapes
-have gone to friends and today i can only enjoy my memories and this actual stack of S3M files that were 
-still on some old harddrive.
+have gone to friends and today i can only enjoy my memories and this actual stack of 
+[S3M](https://en.wikipedia.org/wiki/S3M_\(file_format\)) files that were still on some old harddrive.
 
 For some records i could reconstruct the intended order of songs from the booklet or a 
 still existing listing file. There was much more visual artwork but that seems to be lost.
