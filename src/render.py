@@ -1,7 +1,21 @@
+import argparse
+import json
 from pathlib import Path
 from typing import List, Optional, IO
 
 import yaml
+
+from src import PROJECT_PATH
+
+
+def parseargs():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "command", type=str,
+        choices=["readme", "web-index"],
+    )
+
+    return vars(parser.parse_args())
 
 
 class Records:
@@ -37,16 +51,20 @@ class Records:
             print(file=file)
 
 
-def main():
+def main(command: str):
     records = Records()
     #for record in records.records:
     #    for track in record["tracks"]:
     #        if "(" in track["file"]:
     #            print(record["path"], track["file"])
 
-    records.print_markdown()
+    if command == "web-index":
+        (PROJECT_PATH / "website" / "src" / "index.jsontxt").write_text(json.dumps(records.records))
+
+    elif command == "readme":
+        records.print_markdown()
 
 
 if __name__ == "__main__":
 
-    main()
+    main(**parseargs())

@@ -1,0 +1,21 @@
+body {
+  font-family: monospace;
+
+  background: #222;
+  color: #eee;
+
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.pattern {
+  .pattern-row {
+    div {
+      margin-right: .5rem;
+    }
+  }
+}
