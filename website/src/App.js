@@ -2,12 +2,13 @@ import Player from "./Player";
 import records from "bundle-text:./index.jsontxt";
 import {createContext, useState} from "react";
 import "./style.scss"
+import Records from "./Player/Records";
 
 
 const DEFAULT_CONTEXT = {
     records: JSON.parse(records),
-    record_index: 0,
-    song_index: 0,
+    record_index: null,
+    song_index: null,
     song: null,
 };
 
@@ -22,7 +23,7 @@ const App = () => {
         set_context_value({
             ...context_value,
             record_index: index,
-            song_index: 0,
+            song_index: null,
         });
     };
 
@@ -44,6 +45,10 @@ const App = () => {
             set_record_index,
             set_song_index,
         }}>
+            <div className={"app-wrapper"}>
+                <h3>def.gsus- music 1996-2001</h3>
+                <Records/>
+            </div>
             <Player/>
         </appContext.Provider>
     );

@@ -9,15 +9,10 @@ const Player = () => {
     //const context = useContext(appContext);
 
     return (
-        <div className={"flex"}>
-            <div>
-                <Records/>
-            </div>
-            <div>
-                <SongPlayer/>
-            </div>
+        <div>
+            <SongPlayer/>
         </div>
-    )
+    );
 };
 
 export default Player;

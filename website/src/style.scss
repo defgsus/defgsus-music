@@ -1,9 +1,23 @@
+:root {
+  --color-back: #222;
+  --color-back-hl: #444;
+  --color-front: #eee;
+
+  --color-face: #444;
+  --color-face-hl: #666;
+
+  --color-player-back: #555;
+  --color-player-back-hl: black;
+
+}
+
 body {
   font-family: monospace;
 
-  background: #222;
-  color: #eee;
-
+  background: var(--color-back);
+  color: var(--color-front);
+  margin: 0;
+  padding: 0;
 }
 
 .flex {
@@ -11,11 +25,96 @@ body {
   flex-direction: row;
 }
 
+#app {
+  display: block;
+  position: relative;
 
-.pattern {
-  .pattern-row {
-    div {
-      margin-right: .5rem;
+  .app-wrapper {
+    max-width: 50rem;
+    margin: .2rem auto;
+    padding-bottom: 3rem; // player-bar
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .records {
+    display: flex;
+    flex-wrap: wrap;
+
+    .record-wrapper {
+      max-width: 20rem;
+      padding: .1rem;
+      .record {
+        font-size: 150%;
+        background: var(--color-face);
+        padding: .3rem;
+        display: inline-block;
+        cursor: pointer;
+        &:hover {
+          background: var(--color-face-hl);
+        }
+        &.selected {
+          background: var(--color-front);
+          color: var(--color-back);
+          cursor: crosshair;
+          border-top-left-radius: .5rem;
+          .name {
+            text-shadow: 2px 2px #bbb;
+            font-weight: bold;
+          }
+        }
+        .tracks {
+          background: var(--color-back);
+          color: var(--color-front);
+          margin: .3rem 0 0 1rem;
+          border-top-right-radius: .5rem;
+          .track {
+            padding: .1rem .2rem;
+            &:hover {
+              background: var(--color-back-hl);
+              border-top-right-radius: .5rem;
+            }
+            &.selected {
+              background: var(--color-front);
+              color: var(--color-back);
+              border-top-right-radius: 0;
+            }
+          }
+        }
+      }
+    } // .record-wrapper
+  } // .records
+
+  .player-bar {
+    background: var(--color-player-back);
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 3rem;
+    border-top: 1px solid var(--color-player-back-hl);
+
+    .text-scroller-container {
+      position: relative;
+      .text-scroller {
+        max-width: 100%;
+        .text-scroller-content {
+          display: inline;
+          white-space: nowrap;
+          position: relative;
+        }
+      }
+    }
+
+    .pattern {
+      .pattern-row {
+        div {
+          margin-right: .5rem;
+        }
+      }
     }
   }
+
 }
