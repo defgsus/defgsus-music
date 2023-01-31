@@ -3,11 +3,12 @@ import {useContext, useEffect, useRef, useState} from "react";
 import {appContext} from "../App";
 import Pattern from "./Pattern";
 import PlayerBar from "./PlayerBar";
+import {SOURCE_URL} from "../config";
 
 
 const SongPlayer = () => {
 
-    const {song} = useContext(appContext);
+    const {record_index, song_index, song, set_playing_song_index} = useContext(appContext);
 
     const playerRef = useRef(new ModPlayer());
     const timeoutRef = useRef();
@@ -69,7 +70,7 @@ const SongPlayer = () => {
     useEffect(() => {
         if (song) {
             const filename = `${song.record.path}/${song.file}`;
-            const url = `https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/${filename}`;
+            const url = `${SOURCE_URL}/MODULE/${filename}`;
 
             if (playerRef.current.player?.playing) {
                 playerRef.current.stop();
@@ -81,6 +82,13 @@ const SongPlayer = () => {
             set_player_song(null);
         }
     }, [song]);
+
+    useEffect(() => {
+        if (player_state.playing)
+            set_playing_song_index(record_index, song_index);
+        else
+            set_playing_song_index(null, null);
+    }, [player_state?.playing]);
 
     return (
         <div>
