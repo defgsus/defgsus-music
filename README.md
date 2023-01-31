@@ -25,8 +25,8 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 
 ## [DAS S](./MODULE/DAS_S)
 
-[front](./MODULE/DAS_S/front.png)
-[back](./MODULE/DAS_S/back.png)
+![front](./MODULE/DAS_S/front.png)
+![back](./MODULE/DAS_S/back.png)
 
   - [ein vorspiel](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/DAS_S/INTRO.S3M)
   - [loved: d.d.e.g.s.](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/DAS_S/DDEGS.S3M)
@@ -45,7 +45,7 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 
 ## [GÄA](./MODULE/GAEA)
 
-[front](./MODULE/GAEA/front.png)
+![front](./MODULE/GAEA/front.png)
 
   - [intro](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/GAEA/INTRO.S3M)
   - [atom](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/GAEA/ATOM.S3M)
@@ -62,9 +62,9 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 
 ## [culmination](./MODULE/CULMINAT)
 
-[front](./MODULE/CULMINAT/front.png)
-[booklet](./MODULE/CULMINAT/booklet.png)
-[back](./MODULE/CULMINAT/back.png)
+![front](./MODULE/CULMINAT/front.png)
+![booklet](./MODULE/CULMINAT/booklet.png)
+![back](./MODULE/CULMINAT/back.png)
 
   - [ein vorspiel](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/CULMINAT/INTRO.S3M)
   - [d.d.e.g.s.](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/CULMINAT/DDEGS.S3M)
@@ -81,9 +81,9 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 
 ## [das leben vor dem tod](./MODULE/LEBEN)
 
-[front](./MODULE/LEBEN/front.png)
-[booklet](./MODULE/LEBEN/booklet.png)
-[back](./MODULE/LEBEN/back.png)
+![front](./MODULE/LEBEN/front.png)
+![booklet](./MODULE/LEBEN/booklet.png)
+![back](./MODULE/LEBEN/back.png)
 
   - [ein vorspiel](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/INTRO.S3M)
   - [versuchsobjekt des lebens](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/VERSUCH.S3M)
@@ -105,9 +105,9 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 
 ## [neue instanz](./MODULE/INSTANZ)
 
-[front](./MODULE/INSTANZ/front.png)
-[booklet](./MODULE/INSTANZ/booklet.png)
-[back](./MODULE/INSTANZ/back.png)
+![front](./MODULE/INSTANZ/front.png)
+![booklet](./MODULE/INSTANZ/booklet.png)
+![back](./MODULE/INSTANZ/back.png)
 
   - [my toxic classmate](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/INSTANZ/INTRO.S3M)
   - [fick die prodigy](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/INSTANZ/FLICKY.S3M)
@@ -128,7 +128,7 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 
 ## [mictlantecuhtlis](./MODULE/MICT)
 
-[front](./MODULE/MICT/front.png)
+![front](./MODULE/MICT/front.png)
 
   - [intro (cliff vs. joey)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/INTRO.S3M)
   - [milch](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/MILCH.S3M)
@@ -187,8 +187,8 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 
 ## [Atomik Mikro Kosmos](./MODULE/ATOMIK)
 
-[front](./MODULE/ATOMIK/front.png)
-[back](./MODULE/ATOMIK/back.png)
+![front](./MODULE/ATOMIK/front.png)
+![back](./MODULE/ATOMIK/back.png)
 
   - [based on lofi I](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/LOFIBAS1.S3M)
   - [based on lofi II](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/LOFIBAS2.S3M)
