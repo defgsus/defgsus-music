@@ -1,6 +1,7 @@
 import argparse
 import json
 from pathlib import Path
+from io import StringIO
 from typing import List, Optional, IO
 
 import yaml
@@ -12,7 +13,7 @@ def parseargs():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "command", type=str,
-        choices=["readme", "web-index"],
+        choices=["dump-readme", "readme", "web-index"],
     )
 
     return vars(parser.parse_args())
@@ -21,6 +22,7 @@ def parseargs():
 class Records:
 
     MODULE_PATH = Path(__file__).resolve().parent.parent / "MODULE"
+    GITHUB_PATH = "https://raw.githubusercontent.com/defgsus/defgsus-music/master"
 
     def __init__(self):
         with (self.MODULE_PATH / "index.yml").open() as fp:
@@ -42,13 +44,27 @@ class Records:
                     name = track["file"]
 
                 true_filename = (
-                    f'https://github.com/defgsus/defgsus-music/raw/master/MODULE/'
-                    f'{record["path"]}/{track["file"]}'
+                    f'{self.GITHUB_PATH}/MODULE/{record["path"]}/{track["file"]}'
                 )
                 true_filename = true_filename.replace("(", r"\(").replace(")", r"\)")
                 print(f'  - [{name}]({true_filename})', file=file)
 
             print(file=file)
+
+
+def patch_readme(records: Records, write: bool = False):
+    file = StringIO()
+    records.print_markdown(file=file)
+    file.seek(0)
+    index = file.read()
+
+    readme = Path("README.md").read_text()
+    readme = readme[:readme.find("---------\n") + 10] + "\n" + index
+
+    if not write:
+        print(readme)
+    else:
+        Path("README.md").write_text(readme)
 
 
 def main(command: str):
@@ -61,8 +77,11 @@ def main(command: str):
     if command == "web-index":
         (PROJECT_PATH / "website" / "src" / "index.jsontxt").write_text(json.dumps(records.records))
 
+    elif command == "dump-readme":
+        patch_readme(records)
+
     elif command == "readme":
-        records.print_markdown()
+        patch_readme(records, True)
 
 
 if __name__ == "__main__":

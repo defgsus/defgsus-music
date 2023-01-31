@@ -1,45 +1,5 @@
-- name: GAEA
-  path: GAEA
-  graphics:
-    - front.png
-  description: |
-    Based on the novels by Wolfgang Hohlbein *Die Töchter des Drachen* and *Der Thron der Libelle*.
-    Hohlbein is not a particular *good* writer but his stories can be overwhelming and the writing
-    style is not important for a 15 years old.
-  tracks:
-    - file: INTRO.S3M
-      name: 'intro'
-    - file: ATOM.S3M
-      length: '1:38'
-      name: atom
-    - file: GOLD.S3M
-      length: '5:03'
-      name: goldrausch
-    - file: HRABAN.S3M
-      name: 'hraban'
-    - file: KARA.S3M
-      length: '11:15'
-      name: kara
-    - file: KARA_RMX.S3M
-      length: '9:05'
-      name: kara
-    - file: ROT.S3M
-      name: 'kara'
-    - file: SCHELFH.S3M
-      length: '6:24'
-      name: schelfheim
-    - file: STAHL.S3M
-      length: '3:27'
-      name: stahldorf
-    - file: STAHL(R).S3M
-      length: '3:27'
-      name: stahldorf (rmx)
-    - file: SWEET.S3M
-      length: '4:24'
-      name: sweet simplicity
-
-- name: DAS S
-  path: DAS_S
+- path: DAS_S
+  name: DAS S
   graphics:
     - front.png
     - back.png
@@ -86,6 +46,46 @@
       length: '1:15'
       name: lezztendlich
 
+- path: GAEA
+  name: GÄA
+  graphics:
+    - front.png
+  description: |
+    Based on the novels by Wolfgang Hohlbein *Die Töchter des Drachen* and *Der Thron der Libelle*.
+    Hohlbein is not a particular *good* writer but his stories can be overwhelming and the writing
+    style is not important for a 15 years old.
+  tracks:
+    - file: INTRO.S3M
+      name: 'intro'
+    - file: ATOM.S3M
+      length: '1:38'
+      name: atom
+    - file: GOLD.S3M
+      length: '5:03'
+      name: goldrausch
+    - file: HRABAN.S3M
+      name: 'hraban'
+    - file: KARA.S3M
+      length: '11:15'
+      name: kara
+    - file: KARA_RMX.S3M
+      length: '9:05'
+      name: kara
+    - file: ROT.S3M
+      name: 'kara'
+    - file: SCHELFH.S3M
+      length: '6:24'
+      name: schelfheim
+    - file: STAHL.S3M
+      length: '3:27'
+      name: stahldorf
+    - file: STAHL(R).S3M
+      length: '3:27'
+      name: stahldorf (rmx)
+    - file: SWEET.S3M
+      length: '4:24'
+      name: sweet simplicity
+
 - name: culmination
   path: CULMINAT
   graphics:
@@ -94,7 +94,7 @@
     - back.png
   description: |
     Still in school, still sad about the girl(s). **Mate Galic** was promoting experimental music
-    on german TV music station *VIVA II* and i was increasingly sucked in.
+    on german TV music station *VIVA II* and i was increasingly *sucked in*.
   tracks:
     - file: INTRO.S3M
       length: '3:46'
@@ -189,7 +189,6 @@
       length: '2:59'
       name: bonustrack
 
-
 - path: INSTANZ
   name: neue instanz
   graphics:
@@ -202,7 +201,7 @@
     Until they released *Firestarter*, which was a fantastic song, the first 50 times but it was 
     certainly overplayed on MTV. Now everybody was asking about that damn Prodigy CD and i was
     not really interested anymore. Instead i tried hard at home, with the little Scream Tracker,
-    to create better and better experimental music and get over with the prodigy era.
+    to create better music and get over with the prodigy era.
   tracks:
     - file: INTRO.S3M
       length: '4:51'
