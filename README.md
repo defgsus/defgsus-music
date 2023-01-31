@@ -28,6 +28,10 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 ![front](./MODULE/DAS_S/front.png)
 ![back](./MODULE/DAS_S/back.png)
 
+
+Still in school, heavily in love, lost the girl, went back home and made this album.
+
+
   - [ein vorspiel](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/DAS_S/INTRO.S3M)
   - [loved: d.d.e.g.s.](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/DAS_S/DDEGS.S3M)
   - [i.h.d.g.s](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/DAS_S/IHDGS.S3M)
@@ -46,6 +50,12 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 ## [GÄA](./MODULE/GAEA)
 
 ![front](./MODULE/GAEA/front.png)
+
+
+Based on the novels by Wolfgang Hohlbein *Die Töchter des Drachen* and *Der Thron der Libelle*.
+Hohlbein is not a particular *good* writer but his stories can be overwhelming and the writing
+style is not important for a 15 years old.
+
 
   - [intro](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/GAEA/INTRO.S3M)
   - [atom](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/GAEA/ATOM.S3M)
@@ -66,6 +76,11 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 ![booklet](./MODULE/CULMINAT/booklet.png)
 ![back](./MODULE/CULMINAT/back.png)
 
+
+Still in school, still sad about the girl(s). **Mate Galic** was promoting experimental music
+on german TV music station *VIVA II* and i was increasingly *sucked in*.
+
+
   - [ein vorspiel](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/CULMINAT/INTRO.S3M)
   - [d.d.e.g.s.](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/CULMINAT/DDEGS.S3M)
   - [i.h.d.g.s](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/CULMINAT/IHDGS.S3M)
@@ -84,6 +99,12 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 ![front](./MODULE/LEBEN/front.png)
 ![booklet](./MODULE/LEBEN/booklet.png)
 ![back](./MODULE/LEBEN/back.png)
+
+
+I can't really tell the order of all the albums any more and i long since lost the file's 
+modification timestamps. It's possible though, that this album was the beginning of my
+new life after all that broken heart shit.
+
 
   - [ein vorspiel](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/INTRO.S3M)
   - [versuchsobjekt des lebens](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/VERSUCH.S3M)
@@ -108,6 +129,15 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 ![front](./MODULE/INSTANZ/front.png)
 ![booklet](./MODULE/INSTANZ/booklet.png)
 ![back](./MODULE/INSTANZ/back.png)
+
+
+At that time, every album had at least one song called *fuck prodigy*. I liked them **a lot**
+and bringing the *Jilted Generation* CD to whoever's home usually resulted in *gosh, turn it off!*... 
+Until they released *Firestarter*, which was a fantastic song, the first 50 times but it was 
+certainly overplayed on MTV. Now everybody was asking about that damn Prodigy CD and i was
+not really interested anymore. Instead i tried hard at home, with the little Scream Tracker,
+to create better music and get over with the prodigy era.
+
 
   - [my toxic classmate](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/INSTANZ/INTRO.S3M)
   - [fick die prodigy](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/INSTANZ/FLICKY.S3M)
@@ -153,6 +183,10 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 
 
 ## [ALONE](./MODULE/ALONE)
+
+
+A lot of drum & base to my dear friends in Forst
+
 
   - [98.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/98.S3M)
   - [ABSTURZ.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/ABSTURZ.S3M)
@@ -229,6 +263,15 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 
 ## [filmtheater](./MODULE/FILMTHEA)
 
+
+There was an old cinema in my home town which closed in the early 90ies. It was still nice to 
+read its sign and because we did used a lot of psychedelics at the time, 
+*filmtheater* was kind of a synonym for enjoying the inner and outer universe.
+
+After a couple of years of intensive *tracking* the quality of the songs became a lot better
+even though it was the same program with the same absurd memory limitations.
+
+
   - [gegen](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/GEGEN.S3M)
   - [gegenwolken](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/GWOLKEN.S3M)
   - [um mitzuteilen, dass alles einer lüge gleichkommt (intro)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/LIE_INT.S3M)
@@ -297,6 +340,13 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 
 ## [filmtheater MUTATION](./MODULE/FILMTHEA/MUTATION)
 
+
+The 4th remix album in a row ;)
+
+At that time various people knew my tracks and i *sometimes* played in clubs, carrying ye olde
+386 and a cathode ray monitor to the dance floor.
+
+
   - [120127.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/120127.S3M)
   - [ALKOHOL](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/ALKOHOL.S3M)
   - [BINE.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/BINE.S3M)
@@ -331,6 +381,15 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 
 ## [hoast](./MODULE/HOAST)
 
+
+*Hoast* was some spiritual entity to which contact was reached through LSD and the like. 
+My friend and i were talking endlessly about these topics. Though, nothing particular
+comes to my mind twenty years after..
+
+The first tape had this terrible *"mariujahna"* spelling on the cover and, after a hint, 
+the next tapes had *I was already informed about the mis-spelling of mariujahna* on it.
+
+
   - [intro](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/INTRO.S3M)
   - [zukunftsvisionen](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/99.S3M)
   - [schwarz](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/BLACK.S3M)
@@ -364,6 +423,10 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 
 
 ## [tribbrulr](./MODULE/TRIBB)
+
+
+In the beginning i was **very much** against monotonic basedrum music. That had changed now.
+
 
   - [anatomie eines kuhzüchters](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/ANATOM.S3M)
   - [ATROPIN.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/ATROPIN.S3M)
@@ -402,6 +465,9 @@ so why should you? But, don't hesitate to play it in a club and earn a fee, i'm 
 
 
 ## [TRASH1](./MODULE/TRASH1)
+
+
+There was a TRASH folder where songs were stored that did not fit to a particular album. Over time, a lot of stuff landed there. No way to put it in chronological order any more.
 
   - [BASE.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH1/BASE.S3M)
   - [BASE1.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH1/BASE1.S3M)

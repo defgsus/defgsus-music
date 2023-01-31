@@ -37,6 +37,9 @@ class Records:
                     print(f'![{filename.split(".")[0]}]({record_path}/{filename})', file=file)
                 print(file=file)
 
+            if record.get("description"):
+                print(f'\n{record["description"]}\n', file=file)
+
             for track in record["tracks"]:
                 name = track.get("name")
                 if not name:
