@@ -1,3 +1,0 @@
-[submodule "website/src/microjazz"]
-	path = website/src/microjazz
-	url = git@github.com:nilskj/microjazz.git
