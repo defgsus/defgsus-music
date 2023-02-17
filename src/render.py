@@ -51,6 +51,25 @@ class Records:
 
             print(file=file)
 
+    def web_index(self) -> dict:
+        index = {
+            "records": []
+        }
+        for i, record in enumerate(self.records):
+            index_record = {
+                **record,
+                "tracks": [],
+                "index": i,
+            }
+            for j, track in enumerate(record["tracks"]):
+                index_record["tracks"].append({
+                    **track,
+                    "index": j,
+                    "record_index": i,
+                })
+            index["records"].append(index_record)
+        return index
+
 
 def patch_readme(records: Records, write: bool = False):
     file = StringIO()
@@ -75,7 +94,7 @@ def main(command: str):
     #            print(record["path"], track["file"])
 
     if command == "web-index":
-        (PROJECT_PATH / "website" / "src" / "index.jsontxt").write_text(json.dumps(records.records))
+        (PROJECT_PATH / "website" / "src" / "index.jsontxt").write_text(json.dumps(records.web_index()))
 
     elif command == "dump-readme":
         patch_readme(records)

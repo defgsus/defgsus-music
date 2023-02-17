@@ -736,100 +736,10 @@
     - file: WOHN.S3M
       name: ''
 
-- path: HOAST
-  name: hoast
-  description: |
-    *Hoast* was some spiritual entity to which contact was reached through LSD and the like. 
-    My friend and i were talking endlessly about these topics. Though, nothing particular
-    comes to my mind twenty years after..
-    
-    The first tape had this terrible *"mariujahna"* spelling on the cover and, after a hint, 
-    the next tapes had *I was already informed about the mis-spelling of mariujahna* on it.
-  tracks:
-    - file: INTRO.S3M
-      length: '9:24'
-      name: intro
-    - file: 99.S3M
-      length: '6:33'
-      name: zukunftsvisionen
-    - file: BLACK.S3M
-      length: '8:26'
-      name: schwarz
-    - file: DOORS.S3M
-      length: '2:05'
-      name: doors of perception
-    - file: EIS.S3M
-      length: '7:11'
-      name: visionäre eislandschaft
-    - file: FORST(1).S3M
-      length: '8:32'
-      name: das forst verhängnis
-    - file: FORST(2).S3M
-      length: '10:22'
-      name: das forst verhängniss
-    - file: FORST(3).S3M
-      length: '10:20'
-      name: das forst verhängnisss
-    - file: GRASS.S3M
-      length: '8:20'
-      name: grass
-    - file: HOAST.S3M
-      length: '11:20'
-      name: ich sah hoast
-    - file: KIFF.S3M
-      length: '8:37'
-      name: der mariujahna-konsum als basis der überlegung
-    - file: MICRO.S3M
-      length: '8:56'
-      name: micro
-    - file: SCHLUESS.S3M
-      name: ''
-    - file: SHORT.S3M
-      name: short waylayed freedom
-    - file: TRICK.S3M
-      name: ''
-
-- path: HOAST/TASSE
-  ordering: null
-  name: hoast (TASSE)
-  tracks:
-    - file: INTRO.S3M
-      name: 'intro'
-    - file: EIS.S3M
-      length: '8:37'
-      name: visionäre eiswelt
-    - file: EXTRA.S3M
-      name: intuitive extraordinations
-      length: 8:44
-    - file: KATS.S3M
-      name: flirting of three fat cats
-      length: 8:43
-    - file: KIFF(IN).S3M
-      length: '3:07'
-      name: der mariujahna-konsum als basis der überlegung (intro)
-    - file: KIFF.S3M
-      length: '13:26'
-      name: der mariujahna-konsum als basis der überlegung
-    - file: MICR(IN).S3M
-      length: '3:44'
-      name: micro (intro)
-    - file: MICRO.S3M
-      length: '11:07'
-      name: micro
-    - file: SCREAM.S3M
-      length: '8:35'
-      name: scream what you scream
-    - file: SIMPEL.S3M
-      length: '8:07'
-      name: der name ist zu simpel
-    - file: TRICK.S3M
-      length: '7:49'
-      name: the trick
-
 - path: TRIBB
-  name: tribbrulr
+  name: tribbrulR
   description: |
-    In the beginning i was **very much** against monotonic basedrum music. That had changed now.
+    In the beginning i was **very much** against monotonic basedrum music. That changed.
   tracks:
     - file: ANATOM.S3M
       name: anatomie eines kuhzüchters
@@ -924,6 +834,95 @@
       name: outro
     - file: OUTROII.S3M
       name: ''
+
+- path: HOAST
+  name: about{ hoast }
+  description: |
+    *Hoast* was some spiritual entity to which contact was reached through LSD and the like. 
+    My friend and i were talking endlessly about these topics. Though, nothing particular
+    comes to my mind twenty years after..
+    
+    The first tape had this terrible *"mariujahna"* spelling on the cover and, after a hint, 
+    the next tapes had *I was already informed about the mis-spelling of mariujahna* on it.
+  tracks:
+    - file: INTRO.S3M
+      length: '9:24'
+      name: intro
+    - file: 99.S3M
+      length: '6:33'
+      name: zukunftsvisionen
+    - file: BLACK.S3M
+      length: '8:26'
+      name: schwarz
+    - file: DOORS.S3M
+      length: '2:05'
+      name: doors of perception
+    - file: EIS.S3M
+      length: '7:11'
+      name: visionäre eislandschaft
+    - file: FORST(1).S3M
+      length: '8:32'
+      name: das forst verhängnis
+    - file: FORST(2).S3M
+      length: '10:22'
+      name: das forst verhängniss
+    - file: FORST(3).S3M
+      length: '10:20'
+      name: das forst verhängnisss
+    - file: GRASS.S3M
+      length: '8:20'
+      name: grass
+    - file: HOAST.S3M
+      length: '11:20'
+      name: ich sah hoast
+    - file: KIFF.S3M
+      length: '8:37'
+      name: der mariujahna-konsum als basis der überlegung
+    - file: MICRO.S3M
+      length: '8:56'
+      name: micro
+    - file: SCHLUESS.S3M
+      name: ''
+    - file: SHORT.S3M
+      name: short waylayed freedom
+    - file: TRICK.S3M
+      name: ''
+
+- path: HOAST/TASSE
+  name: about{ hoast} / TASSE
+  tracks:
+    - file: INTRO.S3M
+      name: 'intro'
+    - file: EIS.S3M
+      length: '8:37'
+      name: visionäre eiswelt
+    - file: EXTRA.S3M
+      name: intuitive extraordinations
+      length: 8:44
+    - file: KATS.S3M
+      name: flirting of three fat cats
+      length: 8:43
+    - file: KIFF(IN).S3M
+      length: '3:07'
+      name: der mariujahna-konsum als basis der überlegung (intro)
+    - file: KIFF.S3M
+      length: '13:26'
+      name: der mariujahna-konsum als basis der überlegung
+    - file: MICR(IN).S3M
+      length: '3:44'
+      name: micro (intro)
+    - file: MICRO.S3M
+      length: '11:07'
+      name: micro
+    - file: SCREAM.S3M
+      length: '8:35'
+      name: scream what you scream
+    - file: SIMPEL.S3M
+      length: '8:07'
+      name: der name ist zu simpel
+    - file: TRICK.S3M
+      length: '7:49'
+      name: the trick
 
 - name: TRASH1
   ordering: null

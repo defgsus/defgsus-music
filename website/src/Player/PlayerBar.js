@@ -1,8 +1,11 @@
-import {useEffect, useRef, useState} from "react";
+import {useContext, useEffect, useRef, useState} from "react";
 import Scroller from "./Scroller";
+import {appContext} from "../App";
 
 
-const PlayerBar = ({player, song}) => {
+const PlayerBar = () => {
+
+    const {records, song, playing_song, play_song, player} = useContext(appContext);
 
     const [text, set_text] = useState("");
 
@@ -21,16 +24,22 @@ const PlayerBar = ({player, song}) => {
 
     useEffect(() => {
         let new_text = "* ye olde tunes by def.gsus- * greetings to gonzo *";
-        if (song?.name || song?.file)
-            new_text = song?.name || song?.file;
+        const sng = playing_song || song;
+        if (sng?.name || sng?.file)
+            new_text = sng?.name || sng?.file;
         else if (player.title)
             new_text = player.title;
-        if (song?.record?.name)
-            new_text = `${new_text} / ${song.record.name}`;
+
+        const rec = records && records[sng?.record_index]
+        if (rec?.record?.name)
+            new_text = `${new_text} [${rec.name}]`;
+
         if (player.loading)
             new_text = `loading... ${new_text}`;
+        if (player.playing)
+            new_text = `${new_text} ${player.position}/${player.row}`;
         set_text(new_text);
-    }, [player]);
+    }, [song, playing_song, player]);
 
     return (
         <div className={"player-bar"}>

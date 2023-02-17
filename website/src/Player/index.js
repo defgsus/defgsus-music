@@ -1,7 +1,7 @@
 import {useContext} from "react";
 import {appContext} from "../App";
 import Records from "./Records";
-import SongPlayer from "./SongPlayer";
+import PlayerBar from "./PlayerBar";
 
 
 const Player = () => {
@@ -10,7 +10,7 @@ const Player = () => {
 
     return (
         <div>
-            <SongPlayer/>
+            <PlayerBar/>
         </div>
     );
 };
