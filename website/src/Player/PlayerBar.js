@@ -5,7 +5,7 @@ import {appContext} from "../App";
 
 const PlayerBar = () => {
 
-    const {records, song, playing_song, play_song, player} = useContext(appContext);
+    const {records, song, playing_song, set_song, play_song, player} = useContext(appContext);
 
     const [text, set_text] = useState("");
 
@@ -45,7 +45,11 @@ const PlayerBar = () => {
 
     return (
         <div className={"player-bar"}>
-            <Scroller>{text}</Scroller>
+            <Scroller
+                onClick={() => { if (playing_song) set_song(playing_song)}}
+            >
+                {text}
+            </Scroller>
             <div className={"buttons"}>
                 {buttons.map((b, i) => (
                     <button

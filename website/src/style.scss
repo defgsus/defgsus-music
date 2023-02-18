@@ -3,12 +3,16 @@
   --color-back-hl: #444;
   --color-front: #eee;
   --color-front-hl: #ddd;
+  --color-front-darker: #bbb;
 
   --color-face: #444;
   --color-face-hl: #666;
 
   --color-player-back: #555;
   --color-player-back-hl: black;
+
+  --color-playsym: #484;
+  --color-back-played: #464;
 
   --player-bar-small: 4rem;
 }
@@ -76,6 +80,26 @@ body {
     }
   }
 
+  @keyframes playSymbolBlink {
+    0% {
+      background: var(--color-back);
+      border-radius: 5px;
+    }
+    100% {
+      background: var(--color-playsym);
+      border-radius: 2px;
+    }
+  }
+
+  @keyframes activeInstrument {
+    0% {
+      background: var(--color-front-darker);
+    }
+    100% {
+      background: var(--color-front-hl);
+    }
+  }
+
   .records {
     display: flex;
     flex-wrap: wrap;
@@ -137,7 +161,8 @@ body {
               border-top-right-radius: .5rem;
             }
             &.playing {
-              background: var(--color-back-hl);
+              background: var(--color-back-played);
+              color: white;
             }
             &.selected {
               background: var(--color-front);
@@ -158,6 +183,7 @@ body {
             &.playing {
               .play-symbol {
                 background: var(--color-back);
+                animation: .5s infinite alternate playSymbolBlink;
               }
             }
           }
@@ -168,13 +194,14 @@ body {
           margin-right: .5rem;
           .instruments {
             font-family: "unscii16", monospace;
-            font-size: 75%;
+            font-size: 66%;
             white-space: pre;
 
             .instrument {
               &.active {
                 background: var(--color-front-hl);
                 color: var(--color-back);
+                animation: .5s 1 forwards activeInstrument;
               }
             }
           }

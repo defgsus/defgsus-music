@@ -1,7 +1,7 @@
 import {useEffect, useRef, useState} from "react";
 
 
-const Scroller = ({children, interval}) => {
+const Scroller = ({children, interval, ...props}) => {
     const scrollerRef = useRef();
     const callbackRef = useRef();
     const [scroll_dir, set_scroll_dir] = useState(1);
@@ -50,7 +50,7 @@ const Scroller = ({children, interval}) => {
     }, [scroller_offset, children]);
 
     return (
-        <div className={"text-scroller-container"}>
+        <div className={"text-scroller-container"} {...props}>
             <div className={"text-scroller"} ref={scrollerRef}>
                 <div
                     className={"text-scroller-content"}
