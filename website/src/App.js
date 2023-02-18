@@ -49,14 +49,9 @@ const App = () => {
         };
         if (player.player) {
             new_state.pattern = player.patterndata(new_state.pattern_index);
-            try {
-                new_state.channel_samples = [...Array(new_state.num_channels)].map(
-                    ch => player.currentsample(ch)
-                );
-            }
-            catch {
-                new_state.channel_samples = [...Array(new_state.num_channels)].map(_ => 0);
-            }
+            new_state.active_samples = new Set(
+                player.player.channel.filter(c => c.noteon).map(c => c.sample)
+            );
         }
         set_player_state(new_state);
     };
@@ -88,14 +83,23 @@ const App = () => {
     useEffect(() => {
         hook_to_player(playerRef.current);
         update_player_state();
-        console.log("X", playerRef.song);
-        if (playerRef.song) {
-            set_context_value({
-                ...context_value,
-                playing_song: playerRef.song,
-            })
-        }
     }, [playerRef.current]);
+
+    // load the `context_value.playing_song` when changed
+    useEffect(() => {
+        const song = context_value.playing_song;
+        if (song) {
+            const record = context_value.records[song.record_index];
+            const filename = `${record.path}/${song.file}`;
+            const url = `${SOURCE_URL}/MODULE/${filename}`;
+
+            playerRef.current.stop();
+            playerRef.current = new ModPlayer();
+            playerRef.song = song;
+            hook_to_player(playerRef.current);
+            playerRef.current.load(url);
+        }
+    }, [context_value.playing_song]);
 
     const set_record = (record) => {
         set_context_value({
@@ -106,33 +110,29 @@ const App = () => {
     };
 
     const set_song = (song) => {
+        if (!song) {
+            set_context_value({
+                ...context_value,
+                song: null,
+            });
+            return
+        }
         const record = context_value.records[song.record_index];
-        set_context_value({
+        const new_state = {
             ...context_value,
             record,
             song,
-        });
-        if (!player_state.playing) {
-            play_song(song);
-        }
+        };
+        if (!player_state.playing)
+            new_state.playing_song = song;
+        set_context_value(new_state);
     };
 
-    const play_song = (song, new_context_value=null) => {
-        const record = context_value.records[song.record_index];
-        const filename = `${record.path}/${song.file}`;
-        const url = `${SOURCE_URL}/MODULE/${filename}`;
-
-        if (1 || playerRef.current.player?.playing) {
-            playerRef.current.stop();
-            playerRef.current = new ModPlayer();
-            playerRef.song = song;
-            hook_to_player(playerRef.current);
-        }
-        playerRef.current.load(url);
-        /*set_context_value({
-            ...(new_context_value || context_value),
+    const play_song = (song) => {
+        set_context_value({
+            ...context_value,
             playing_song: song,
-        });*/
+        });
     };
 
     const play_next_song = () => {

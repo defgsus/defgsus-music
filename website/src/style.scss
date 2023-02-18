@@ -2,6 +2,7 @@
   --color-back: #222;
   --color-back-hl: #444;
   --color-front: #eee;
+  --color-front-hl: #ddd;
 
   --color-face: #444;
   --color-face-hl: #666;
@@ -111,8 +112,10 @@ body {
             .graphic { margin-left: .2rem; }
           }
         }
+
         .record-content {
           display: flex;
+          //flex-wrap: wrap;
         };
 
         .tracks {
@@ -120,6 +123,8 @@ body {
           color: var(--color-front);
           margin: .3rem 0 0 1rem;
           border-top-right-radius: .5rem;
+          min-width: 15rem;
+          max-width: 23rem;
 
           // not working with the play-symbol hack
           //overflow: scroll;
@@ -167,6 +172,10 @@ body {
             white-space: pre;
 
             .instrument {
+              &.active {
+                background: var(--color-front-hl);
+                color: var(--color-back);
+              }
             }
           }
         }

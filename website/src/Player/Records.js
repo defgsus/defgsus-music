@@ -5,14 +5,36 @@ import Image from "./Image";
 
 
 const TrackInfo = ({song}) => {
+    const {
+        playing_song,
+        player,
+    } = useContext(appContext);
+    const is_playing = playing_song?.index === song?.index && playing_song?.record_index === song?.record_index;
+
+    if (!is_playing)
+        return (
+            <div className={"track-info"}>
+                <div className={"instruments"}>
+                    {song.instruments.map((inst, i) => (
+                        <div className={"instrument"} key={i}>
+                            {inst.name.padEnd(28)} {`${inst.length || ""}`.padStart(6)}
+                        </div>
+                    ))}
+                </div>
+            </div>
+        );
+
     return (
         <div className={"track-info"}>
             <div className={"instruments"}>
-                {song.instruments.map((inst, i) => (
-                    <div className={"instrument"} key={i}>
-                        {inst.name.padEnd(28)} {`${inst.length || ""}`.padStart(6)}
-                    </div>
-                ))}
+                {song.instruments.map((inst, i) => {
+                    const active = player.active_samples?.has(i);
+                    return (
+                        <div className={"instrument" + (active ? " active" : "")} key={i}>
+                            {inst.name.padEnd(28)} {`${inst.length || ""}`.padStart(6)}
+                        </div>
+                    );
+                })}
             </div>
         </div>
     );
@@ -27,7 +49,9 @@ const Records = () => {
     } = useContext(appContext);
 
     return (
-        <div className={"records"}>
+        <div
+            className={"records"}
+        >
             {records.map((rec, i) => {
                 const selected_record = rec.index === record?.index;
                 return (
@@ -70,7 +94,7 @@ const Records = () => {
                                         return (
                                             <div
                                                 key={j}
-                                                onClick={() => set_song(track)}
+                                                onClick={() => set_song(track) }
                                                 onDoubleClick={(e) => {
                                                     e.preventDefault();
                                                     e.stopPropagation();
