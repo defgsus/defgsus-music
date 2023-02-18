@@ -9,8 +9,8 @@ const TrackInfo = ({song}) => {
         <div className={"track-info"}>
             <div className={"instruments"}>
                 {song.instruments.map((inst, i) => (
-                    <div className={"instrument"}>
-                        {inst.name.padEnd(26)} {`${inst.length || ""}`.padStart(6)}
+                    <div className={"instrument"} key={i}>
+                        {inst.name.padEnd(28)} {`${inst.length || ""}`.padStart(6)}
                     </div>
                 ))}
             </div>

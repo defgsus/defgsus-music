@@ -88,6 +88,13 @@ const App = () => {
     useEffect(() => {
         hook_to_player(playerRef.current);
         update_player_state();
+        console.log("X", playerRef.song);
+        if (playerRef.song) {
+            set_context_value({
+                ...context_value,
+                playing_song: playerRef.song,
+            })
+        }
     }, [playerRef.current]);
 
     const set_record = (record) => {
@@ -110,21 +117,22 @@ const App = () => {
         }
     };
 
-    const play_song = (song) => {
+    const play_song = (song, new_context_value=null) => {
         const record = context_value.records[song.record_index];
         const filename = `${record.path}/${song.file}`;
         const url = `${SOURCE_URL}/MODULE/${filename}`;
 
-        if (playerRef.current.player?.playing) {
+        if (1 || playerRef.current.player?.playing) {
             playerRef.current.stop();
             playerRef.current = new ModPlayer();
+            playerRef.song = song;
             hook_to_player(playerRef.current);
         }
         playerRef.current.load(url);
-        set_context_value({
-            ...context_value,
+        /*set_context_value({
+            ...(new_context_value || context_value),
             playing_song: song,
-        });
+        });*/
     };
 
     const play_next_song = () => {

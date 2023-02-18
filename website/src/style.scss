@@ -120,11 +120,19 @@ body {
           color: var(--color-front);
           margin: .3rem 0 0 1rem;
           border-top-right-radius: .5rem;
+
+          // not working with the play-symbol hack
+          //overflow: scroll;
+          //max-height: 40rem;
+
           .track {
             padding: .1rem .2rem;
             &:hover {
               background: var(--color-back-hl);
               border-top-right-radius: .5rem;
+            }
+            &.playing {
+              background: var(--color-back-hl);
             }
             &.selected {
               background: var(--color-front);
@@ -146,7 +154,6 @@ body {
               .play-symbol {
                 background: var(--color-back);
               }
-              //background: red;
             }
           }
         } // .tracks
