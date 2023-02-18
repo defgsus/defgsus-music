@@ -12,6 +12,11 @@
   --player-bar-small: 4rem;
 }
 
+@font-face {
+  font-family: "unscii16";
+  src: url("unscii-16.woff") format("woff");
+}
+
 body {
   font-family: monospace;
 
@@ -76,7 +81,7 @@ body {
     user-select: none;
 
     .record-wrapper {
-      max-width: 20rem;
+      //max-width: 20rem;
       padding: .1rem;
       .record {
         font-size: 150%;
@@ -106,6 +111,9 @@ body {
             .graphic { margin-left: .2rem; }
           }
         }
+        .record-content {
+          display: flex;
+        };
 
         .tracks {
           background: var(--color-back);
@@ -139,6 +147,19 @@ body {
                 background: var(--color-back);
               }
               //background: red;
+            }
+          }
+        } // .tracks
+
+        .track-info {
+          margin-left: 1rem;
+          margin-right: .5rem;
+          .instruments {
+            font-family: "unscii16", monospace;
+            font-size: 75%;
+            white-space: pre;
+
+            .instrument {
             }
           }
         }

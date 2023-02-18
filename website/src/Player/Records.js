@@ -4,6 +4,21 @@ import {SOURCE_URL} from "../config";
 import Image from "./Image";
 
 
+const TrackInfo = ({song}) => {
+    return (
+        <div className={"track-info"}>
+            <div className={"instruments"}>
+                {song.instruments.map((inst, i) => (
+                    <div className={"instrument"}>
+                        {inst.name.padEnd(26)} {`${inst.length || ""}`.padStart(6)}
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+
 const Records = () => {
 
     const {
@@ -47,7 +62,8 @@ const Records = () => {
                                 </div>
                             </div>
                             {!selected_record ? null : (
-                                <div className={"tracks"}>
+                                <div className={"record-content"}>
+                                    <div className={"tracks"}>
                                     {rec.tracks.map((track, j) => {
                                         const selected_track = selected_record && track.index === song?.index;
                                         const playing_track = playing_song?.record_index === i && track.index === playing_song?.index;
@@ -80,6 +96,8 @@ const Records = () => {
                                             </div>
                                         );
                                     })}
+                                </div>
+                                    {!song ? null : <TrackInfo song={song}/>}
                                 </div>
                             )}
                         </div>

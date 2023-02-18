@@ -31,13 +31,15 @@ const PlayerBar = () => {
             new_text = player.title;
 
         const rec = records && records[sng?.record_index]
-        if (rec?.record?.name)
+        if (rec?.name)
             new_text = `${new_text} [${rec.name}]`;
 
         if (player.loading)
             new_text = `loading... ${new_text}`;
-        if (player.playing)
-            new_text = `${new_text} ${player.position}/${player.row}`;
+        if (player.playing) {
+            const pos = `${player.position}/${player.length} ${player.row}/64`;
+            new_text = `${new_text} ${pos}`;
+        }
         set_text(new_text);
     }, [song, playing_song, player]);
 

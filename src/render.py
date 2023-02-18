@@ -7,6 +7,7 @@ from typing import List, Optional, IO
 import yaml
 
 from src import PROJECT_PATH
+from src.s3m import S3m
 
 
 def parseargs():
@@ -62,10 +63,24 @@ class Records:
                 "index": i,
             }
             for j, track in enumerate(record["tracks"]):
+                module = S3m.from_file(self.MODULE_PATH / record["path"] / track["file"])
+                instruments = []
+                for inst in module.instruments:
+                    if inst.title:
+                        instruments.append({
+                            "type": inst.type,
+                            "name": inst.title,
+                            "length": inst.length,
+                        })
+                    else:
+                        if not instruments or instruments[-1]["name"]:
+                            instruments.append({"name": ""})
+
                 index_record["tracks"].append({
                     **track,
                     "index": j,
                     "record_index": i,
+                    "instruments": instruments,
                 })
             index["records"].append(index_record)
         return index

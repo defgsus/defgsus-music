@@ -43,7 +43,7 @@ const App = () => {
             sample_names: player.samplenames || [],
             play: () => {
                 player.play();
-                update_player_state_repeatedly();
+                update_player_state();
             },
             stop: () => player.stop(),
         };
@@ -61,6 +61,7 @@ const App = () => {
         set_player_state(new_state);
     };
 
+    // actually unused
     const update_player_state_repeatedly = () => {
         update_player_state();
         if (timeoutRef.current)
@@ -78,7 +79,10 @@ const App = () => {
         player.onPlay = update_player_state;
         player.onStop = update_player_state;
         player.onNextRow = update_player_state;
-
+        player.onEnd = () => {
+            play_next_song();
+            update_player_state();
+        };
     };
 
     useEffect(() => {
@@ -123,12 +127,28 @@ const App = () => {
         });
     };
 
+    const play_next_song = () => {
+        const song = context_value.playing_song;
+        if (song) {
+            const record = context_value.records[song.record_index];
+            if (song.index < record.tracks.length - 1)
+                play_song(record.tracks[song.index + 1]);
+            else {
+                const next_record = context_value.records[(record.index + 1) % context_value.records.length];
+                play_song(next_record.tracks[0]);
+            }
+        } else {
+            play_song(context_value.records[0].tracks[0]);
+        }
+    };
+
     return (
         <appContext.Provider value={{
             ...context_value,
             set_record,
             set_song,
             play_song,
+            play_next_song,
             player: player_state,
         }}>
             <div className={"app-wrapper"}>
