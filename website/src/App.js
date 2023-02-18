@@ -25,6 +25,7 @@ const App = () => {
     const playerRef = useRef(new ModPlayer());
     const timeoutRef = useRef();
     const [player_state, set_player_state] = useState({});
+    const [player_ended, set_player_ended] = useState(false);
 
     const update_player_state = () => {
         const player = playerRef.current;
@@ -75,7 +76,7 @@ const App = () => {
         player.onStop = update_player_state;
         player.onNextRow = update_player_state;
         player.onEnd = () => {
-            play_next_song();
+            set_player_ended(true);
             update_player_state();
         };
     };
@@ -100,6 +101,13 @@ const App = () => {
             playerRef.current.load(url);
         }
     }, [context_value.playing_song]);
+
+    useEffect(() => {
+        if (player_ended) {
+            set_player_ended(false);
+            play_next_song();
+        }
+    }, [player_ended]);
 
     const set_record = (record) => {
         set_context_value({
@@ -128,22 +136,28 @@ const App = () => {
         set_context_value(new_state);
     };
 
-    const play_song = (song) => {
-        set_context_value({
+    const play_song = (song, view=false) => {
+        const new_state = {
             ...context_value,
             playing_song: song,
-        });
+        };
+        if (song && view)
+            new_state.song = song;
+        set_context_value(new_state);
     };
 
     const play_next_song = () => {
         const song = context_value.playing_song;
+        console.log("X", song)
         if (song) {
+            const is_viewed = context_value.playing_song.index === context_value.song?.index
+                                && context_value.playing_song.record_index === context_value.song?.record_index;
             const record = context_value.records[song.record_index];
             if (song.index < record.tracks.length - 1)
-                play_song(record.tracks[song.index + 1]);
+                play_song(record.tracks[song.index + 1], is_viewed);
             else {
                 const next_record = context_value.records[(record.index + 1) % context_value.records.length];
-                play_song(next_record.tracks[0]);
+                play_song(next_record.tracks[0], is_viewed);
             }
         } else {
             play_song(context_value.records[0].tracks[0]);

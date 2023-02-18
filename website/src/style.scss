@@ -190,10 +190,15 @@ body {
         } // .tracks
 
         .track-info {
+          font-family: "unscii16", monospace;
+
           margin-left: 1rem;
           margin-right: .5rem;
+          .header {
+            margin-bottom: .4rem;
+            font-size: 75%;
+          }
           .instruments {
-            font-family: "unscii16", monospace;
             font-size: 66%;
             white-space: pre;
 

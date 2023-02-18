@@ -8,33 +8,43 @@ const TrackInfo = ({song}) => {
     const {
         playing_song,
         player,
+        records,
     } = useContext(appContext);
     const is_playing = playing_song?.index === song?.index && playing_song?.record_index === song?.record_index;
 
-    if (!is_playing)
-        return (
-            <div className={"track-info"}>
-                <div className={"instruments"}>
-                    {song.instruments.map((inst, i) => (
-                        <div className={"instrument"} key={i}>
-                            {inst.name.padEnd(28)} {`${inst.length || ""}`.padStart(6)}
-                        </div>
-                    ))}
-                </div>
-            </div>
-        );
-
-    return (
-        <div className={"track-info"}>
-            <div className={"instruments"}>
-                {song.instruments.map((inst, i) => {
+    const render_instruments = () => {
+        if (!is_playing) {
+            return (
+                song.instruments.map((inst, i) => (
+                    <div className={"instrument"} key={i}>
+                        {inst.name.padEnd(28)} {`${inst.length || ""}`.padStart(6)}
+                    </div>
+                ))
+            );
+        } else {
+            return (
+                song.instruments.map((inst, i) => {
                     const active = player.active_samples?.has(i);
                     return (
                         <div className={"instrument" + (active ? " active" : "")} key={i}>
                             {inst.name.padEnd(28)} {`${inst.length || ""}`.padStart(6)}
                         </div>
                     );
-                })}
+                })
+            );
+        }
+    };
+
+    const filename = `${records[song.record_index].path}/${song.file}`;
+    const url = `${SOURCE_URL}/MODULE/${filename}`;
+
+    return (
+        <div className={"track-info"}>
+            <div className={"header"}>
+                <a href={url}>{filename}</a>
+            </div>
+            <div className={"instruments"}>
+                {render_instruments()}
             </div>
         </div>
     );
