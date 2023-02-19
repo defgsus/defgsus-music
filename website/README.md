@@ -2,11 +2,13 @@
 
 ```shell
 # to install packages
-yarn  
+website> yarn  
 # to run dev server at http://localhost:1234
-yarn start
+website> yarn start
 
+# publish to ../docs/
+website> ./publish.sh
 
 # to update record index for website (in project root)
-python src/render.py web-index
+root> python src/render.py web-index
 ```
