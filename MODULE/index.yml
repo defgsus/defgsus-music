@@ -929,7 +929,7 @@
   ordering: null
   path: TRASH1
   description:
-    There was a TRASH folder where songs were stored that did not fit to a particular album. 
+    There was a TRASH folder where songs were stored that did not fit to a particular album.
     Over time, a lot of stuff landed there. No way to put it in chronological order any more.
   tracks:
     - file: BASE.S3M

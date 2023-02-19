@@ -1,0 +1,5 @@
+{
+  "/MODULE": {
+    "target": "http://localhost:8008/",
+  }
+}
