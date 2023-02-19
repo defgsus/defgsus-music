@@ -2,6 +2,8 @@
 
 The official release of my [Scream Tracker](https://en.wikipedia.org/wiki/Scream_Tracker) songs.
 
+**[Listen Online](https://defgsus.github.io/defgsus-music/)** or **[Download zip](https://github.com/defgsus/defgsus-music/archive/refs/heads/master.zip)**.
+
 I did all of them on a 386 SX with 4mb of memory, although the ScreamTracker did only use the
 base memory window, so you could use about 450kb. This is not so bad since an instrument
 could only be 64k samples long. That again is the entire memory available to the Commodore 64,
