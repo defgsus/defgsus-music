@@ -18,6 +18,12 @@ def parseargs():
 
     return vars(parser.parse_args())
 
+def escape_md(s: str) -> str:
+    chars = "()[]"
+    for c in chars:
+        s = s.replace(c, f"\\{c}")
+    return s
+
 
 class Records:
 
@@ -34,7 +40,7 @@ class Records:
 
             if record.get("graphics"):
                 for filename in record["graphics"]:
-                    print(f'![{filename.split(".")[0]}]({record_path}/{filename})', file=file)
+                    print(f'![{escape_md(filename.split(".")[0])}]({record_path}/{escape_md(filename)})', file=file)
                 print(file=file)
 
             if record.get("description"):
@@ -48,8 +54,7 @@ class Records:
                 true_filename = (
                     f'{self.GITHUB_PATH}/MODULE/{record["path"]}/{track["file"]}'
                 )
-                true_filename = true_filename.replace("(", r"\(").replace(")", r"\)")
-                print(f'  - [{name}]({true_filename})', file=file)
+                print(f'- [{escape_md(name)}]({escape_md(true_filename)})', file=file)
 
             print(file=file)
 

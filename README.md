@@ -68,7 +68,7 @@ style is not important for a 15 years old.
 - [kara](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/GAEA/ROT.S3M)
 - [schelfheim](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/GAEA/SCHELFH.S3M)
 - [stahldorf](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/GAEA/STAHL.S3M)
-- [stahldorf (rmx)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/GAEA/STAHL\(R\).S3M)
+- [stahldorf \(rmx\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/GAEA/STAHL\(R\).S3M)
 - [sweet simplicity](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/GAEA/SWEET.S3M)
 
 
@@ -103,7 +103,7 @@ on german TV music station *VIVA II* and i was increasingly *sucked in*.
 ![back](./MODULE/LEBEN/back.png)
 
 
-I can't really tell the order of all the albums any more and i long since lost the file's
+I can't really tell the order of all the albums any more and i long since lost the file's 
 modification timestamps. It's possible though, that this album was the beginning of my
 new life after all that broken heart shit.
 
@@ -115,14 +115,14 @@ new life after all that broken heart shit.
 - [the haze](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/HAZE.S3M)
 - [boris b sein marktplazz](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/MARKTPLA.S3M)
 - [meine ewige liebe ist mutiert zu tiefem hass](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/MEINE_LI.S3M)
-- [vergessen (rmx)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/VERG_RMX.S3M)
-- [(c)law](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/\(C\)LAW.S3M)
+- [vergessen \(rmx\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/VERG_RMX.S3M)
+- [\(c\)law](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/\(C\)LAW.S3M)
 - [o-saft-molli](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/MOLLI.S3M)
 - [---](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/D&B.S3M)
 - [oberflächliche liebe](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/OBERFL.S3M)
 - [OUTRO I](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/OUTRO.S3M)
-- [OUTRO ][](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/OUTLOUDE.S3M)
-- [the haze (rmx)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/HAZEMIX.S3M)
+- [OUTRO \]\[](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/OUTLOUDE.S3M)
+- [the haze \(rmx\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/HAZEMIX.S3M)
 - [bonustrack](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/LEBEN/RUND.S3M)
 
 
@@ -134,8 +134,8 @@ new life after all that broken heart shit.
 
 
 At that time, every album had at least one song called *fuck prodigy*. I liked them **a lot**
-and bringing the *Jilted Generation* CD to whoever's home usually resulted in *gosh, turn it off!*...
-Until they released *Firestarter*, which was a fantastic song, the first 50 times but it was
+and bringing the *Jilted Generation* CD to whoever's home usually resulted in *gosh, turn it off!*... 
+Until they released *Firestarter*, which was a fantastic song, the first 50 times but it was 
 certainly overplayed on MTV. Now everybody was asking about that damn Prodigy CD and i was
 not really interested anymore. Instead i tried hard at home, with the little Scream Tracker,
 to create better music and get over with the prodigy era.
@@ -162,7 +162,7 @@ to create better music and get over with the prodigy era.
 
 ![front](./MODULE/MICT/front.png)
 
-- [intro (cliff vs. joey)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/INTRO.S3M)
+- [intro \(cliff vs. joey\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/INTRO.S3M)
 - [milch](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/MILCH.S3M)
 - [der gedanke an das ende is monoton](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/ENDZEIT.S3M)
 - [hero mother](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/BEWUST.S3M)
@@ -177,9 +177,9 @@ to create better music and get over with the prodigy era.
 - [tennis obsessions](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/TENNIS.S3M)
 - [löwenzahn](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/BRIDGE.S3M)
 - [goldrausch](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/GOLD.S3M)
-- [grün (RMX)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/GRUEN.S3M)
+- [grün \(RMX\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/GRUEN.S3M)
 - [outro](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/OUTRO.S3M)
-- [der gedanke an das ende ist monoton (RMX)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/END1.S3M)
+- [der gedanke an das ende ist monoton \(RMX\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/END1.S3M)
 - [introvertiert & schnee](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/INTROVER.S3M)
 - [isotope](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/MICT/ISOTOPE.S3M)
 
@@ -198,10 +198,10 @@ A lot of drum & base to my dear friends in Forst
 - [D&B.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/D&B.S3M)
 - [DAST.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/DAST.S3M)
 - [ein happen depress...](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/DEPRESS.S3M)
-- [DUG(MOR).S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/DUG\(MOR\).S3M)
-- [DUG (Das Ungute Gefühl)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/DUG.S3M)
-- [DUG (RMX)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/DUG\(R\).S3M)
-- [DUG (RMX)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/DUG\(R1\).S3M)
+- [DUG\(MOR\).S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/DUG\(MOR\).S3M)
+- [DUG \(Das Ungute Gefühl\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/DUG.S3M)
+- [DUG \(RMX\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/DUG\(R\).S3M)
+- [DUG \(RMX\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/DUG\(R1\).S3M)
 - [visionäre eislandschaft](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/EIS.S3M)
 - [FALL.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/FALL.S3M)
 - [entfremdet](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ALONE/FREMD.S3M)
@@ -237,37 +237,37 @@ A lot of drum & base to my dear friends in Forst
 - [faschistenpack](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/PACK.S3M)
 - [tussis mit depressiven gesichtsausdruck](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/SAMBA.S3M)
 - [tussis mit depressiven gesichtsausdruck](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/SAMBA1.S3M)
-- [milch (rmx)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH\(R\).S3M)
+- [milch \(rmx\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH\(R\).S3M)
 - [outro](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/OUTRO.S3M)
 - [space invaders](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/D&B.S3M)
-- [milch (RMX II)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/M\(R\)_1.S3M)
+- [milch \(RMX II\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/M\(R\)_1.S3M)
 
 
 ## [Atomik Mikro Kosmos / MILCH](./MODULE/ATOMIK/MILCH)
 
 - [intro](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/INTRO.S3M)
 - [milch](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/MILCH.S3M)
-- [milch (rmx)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/M\(R\)_1.S3M)
+- [milch \(rmx\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/M\(R\)_1.S3M)
 - [interlude](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/INTER\(1\).S3M)
-- [milch (RMX II)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/M\(R\)_2.S3M)
+- [milch \(RMX II\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/M\(R\)_2.S3M)
 - [network](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/NETZ\(1\).S3M)
 - [existent](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/EXISTENT.S3M)
-- [tennis obessions (explodiat)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/EXPLODIA.S3M)
-- [milch (RMX III)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/M\(R\)_3.S3M)
-- [der gedanke an das ende ist monoton (RMX)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/END_R\(1\).S3M)
+- [tennis obessions \(explodiat\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/EXPLODIA.S3M)
+- [milch \(RMX III\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/M\(R\)_3.S3M)
+- [der gedanke an das ende ist monoton \(RMX\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/END_R\(1\).S3M)
 - [interlude II](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/INTER\(2\).S3M)
-- [der gedanke an das ende ist monoton (RMXII)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/END_R\(2\).S3M)
+- [der gedanke an das ende ist monoton \(RMXII\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/END_R\(2\).S3M)
 - [network down](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/NETZ\(2\).S3M)
 - [network extra down](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/NETZ\(3\).S3M)
 - [network inclompete](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/NETZ\(4\).S3M)
-- [exhibition ins tierreich (RMX)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/TIER\(1\).S3M)
+- [exhibition ins tierreich \(RMX\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/ATOMIK/MILCH/TIER\(1\).S3M)
 
 
 ## [filmtheater](./MODULE/FILMTHEA)
 
 
-There was an old cinema in my home town which closed in the early 90ies. It was still nice to
-read its sign and because we did used a lot of psychedelics at the time,
+There was an old cinema in my home town which closed in the early 90ies. It was still nice to 
+read its sign and because we did used a lot of psychedelics at the time, 
 *filmtheater* was kind of a synonym for enjoying the inner and outer universe.
 
 After a couple of years of intensive *tracking* the quality of the songs became a lot better
@@ -276,7 +276,7 @@ even though it was the same program with the same absurd memory limitations.
 
 - [gegen](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/GEGEN.S3M)
 - [gegenwolken](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/GWOLKEN.S3M)
-- [um mitzuteilen, dass alles einer lüge gleichkommt (intro)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/LIE_INT.S3M)
+- [um mitzuteilen, dass alles einer lüge gleichkommt \(intro\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/LIE_INT.S3M)
 - [um mitzuteilen, dass alles einer lüge gleichkommt](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/LIE.S3M)
 - [mono{ hoast }](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MONO.S3M)
 - [NONAME.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/NONAME.S3M)
@@ -315,13 +315,13 @@ even though it was the same program with the same absurd memory limitations.
 - [the point of self...](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/II/POINT.S3M)
 - [tontot](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/II/TONTOT.S3M)
 - [electric snow](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/II/SNOW.S3M)
-- [prolog (epilog)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/II/PROLOG1.S3M)
+- [prolog \(epilog\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/II/PROLOG1.S3M)
 
 
 ## [filmtheater III](./MODULE/FILMTHEA/III)
 
 - [velvet warhole](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/III/ANDYW.S3M)
-- [velvet warhole (RMX)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/III/ANDYW1.S3M)
+- [velvet warhole \(RMX\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/III/ANDYW1.S3M)
 - [BASCHRO.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/III/BASCHRO.S3M)
 - [CHEMIE.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/III/CHEMIE.S3M)
 - [DEVIAT.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/III/DEVIAT.S3M)
@@ -354,7 +354,7 @@ At that time various people knew my tracks and i *sometimes* played in clubs, ca
 - [BINE.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/BINE.S3M)
 - [BINE1.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/BINE1.S3M)
 - [chambers of mutation](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/CHAMBER.S3M)
-- [chambers of mutation (epilog)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/CH_EPIL.S3M)
+- [chambers of mutation \(epilog\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/CH_EPIL.S3M)
 - [CHILL.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/CHILL.S3M)
 - [DAB.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/DAB.S3M)
 - [dublin lines](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/DUBLIN.S3M)
@@ -377,18 +377,18 @@ At that time various people knew my tracks and i *sometimes* played in clubs, ca
 - [SAMBA.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/SAMBA.S3M)
 - [SOME.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/SOME.S3M)
 - [strikt rythmus](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/STRIKT.S3M)
-- [strikt rythmus (untanz)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/STRIK_U.S3M)
+- [strikt rythmus \(untanz\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/STRIK_U.S3M)
 - [WOHN.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/FILMTHEA/MUTATION/WOHN.S3M)
 
 
 ## [hoast](./MODULE/HOAST)
 
 
-*Hoast* was some spiritual entity to which contact was reached through LSD and the like.
+*Hoast* was some spiritual entity to which contact was reached through LSD and the like. 
 My friend and i were talking endlessly about these topics. Though, nothing particular
 comes to my mind twenty years after..
 
-The first tape had this terrible *"mariujahna"* spelling on the cover and, after a hint,
+The first tape had this terrible *"mariujahna"* spelling on the cover and, after a hint, 
 the next tapes had *I was already informed about the mis-spelling of mariujahna* on it.
 
 
@@ -415,9 +415,9 @@ the next tapes had *I was already informed about the mis-spelling of mariujahna*
 - [visionäre eiswelt](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/TASSE/EIS.S3M)
 - [intuitive extraordinations](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/TASSE/EXTRA.S3M)
 - [flirting of three fat cats](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/TASSE/KATS.S3M)
-- [der mariujahna-konsum als basis der überlegung (intro)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/TASSE/KIFF\(IN\).S3M)
+- [der mariujahna-konsum als basis der überlegung \(intro\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/TASSE/KIFF\(IN\).S3M)
 - [der mariujahna-konsum als basis der überlegung](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/TASSE/KIFF.S3M)
-- [micro (intro)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/TASSE/MICR\(IN\).S3M)
+- [micro \(intro\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/TASSE/MICR\(IN\).S3M)
 - [micro](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/TASSE/MICRO.S3M)
 - [scream what you scream](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/TASSE/SCREAM.S3M)
 - [der name ist zu simpel](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/HOAST/TASSE/SIMPEL.S3M)
@@ -444,17 +444,17 @@ In the beginning i was **very much** against monotonic basedrum music. That had 
 - [joe noex introducing](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/JOE\(BYE!.S3M)
 - [joe noex introducing](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/JOE\(RMX\).S3M)
 - [nie wieder <labor>](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/LABOR.S3M)
-- [LSD(1).S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/LSD\(1\).S3M)
-- [lsd_junkie (PART I)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/LSD_J\(1\).S3M)
+- [LSD\(1\).S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/LSD\(1\).S3M)
+- [lsd_junkie \(PART I\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/LSD_J\(1\).S3M)
 - [MICT.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/MICT.S3M)
 - [die wunderbare welt der frequenzmodulation](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/MODULA.S3M)
 - [keine mucke zum verstehn](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/MUCKE\(1\).S3M)
 - [keine mucke zum verstehn](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/MUCKE\(2\).S3M)
 - [the narcotic choice](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/NARCOTIC.S3M)
 - [the narcotic RMX](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/NARCO\(R\).S3M)
-- [network down (rMx)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/NETZ\(R2\).S3M)
+- [network down \(rMx\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/NETZ\(R2\).S3M)
 - [itz a true story](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/STORY.S3M)
-- [my toxic classmate(R)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/TOXIC\(R\).S3M)
+- [my toxic classmate\(R\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/TOXIC\(R\).S3M)
 - [tribbrulR](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/TRIBB.S3M)
 - [TRIP1.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/TRIP1.S3M)
 - [the animal in](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRIBB/TRIP2.S3M)
@@ -559,13 +559,13 @@ There was a TRASH folder where songs were stored that did not fit to a particula
 
 - [DISKO.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/DISKO.S3M)
 - [das forst verhängniss](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/FORST\(2\).S3M)
-- [LSD_J(2).S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/LSD_J\(2\).S3M)
+- [LSD_J\(2\).S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/LSD_J\(2\).S3M)
 - [MICT1.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/MICT1.S3M)
-- [network (rmx)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/NETZ\(R1\).S3M)
+- [network \(rmx\)](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/NETZ\(R1\).S3M)
 - [OUTROIII.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/OUTROIII.S3M)
 - [PROPAN.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/PROPAN.S3M)
 - [SMOOTH.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/SMOOTH.S3M)
-- [STORY(A).S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/STORY\(A\).S3M)
+- [STORY\(A\).S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/STORY\(A\).S3M)
 - [TEKK.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/TEKK.S3M)
 - [always walk on the same](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/THESAME.S3M)
 - [TJA.S3M](https://raw.githubusercontent.com/defgsus/defgsus-music/master/MODULE/TRASH3/TJA.S3M)
