@@ -3,7 +3,7 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --no-source-maps --public-url /defgsus-music --dist-dir ../docs/"
+    "build": "parcel build --public-url /defgsus-music --dist-dir ../docs/"
   },
   "devDependencies": {
     "@parcel/transformer-inline-string": "2.8.3",
