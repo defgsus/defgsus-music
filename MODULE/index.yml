@@ -70,9 +70,9 @@
       name: kara
     - file: KARA_RMX.S3M
       length: '9:05'
-      name: kara
+      name: kara (RMX)
     - file: ROT.S3M
-      name: 'kara'
+      name: 'rot'
     - file: SCHELFH.S3M
       length: '6:24'
       name: schelfheim
@@ -81,7 +81,7 @@
       name: stahldorf
     - file: STAHL(R).S3M
       length: '3:27'
-      name: stahldorf (rmx)
+      name: stahldorf (RMX)
     - file: SWEET.S3M
       length: '4:24'
       name: sweet simplicity
@@ -149,7 +149,7 @@
       name: versuchsobjekt des lebens
     - file: UEBER.S3M
       length: '5:50'
-      name: "Überfahrung"
+      name: "ÜBerfahrung......"
     - file: HIERARCH.S3M
       length: '7:50'
       name: hierarchie des begreifens
@@ -161,7 +161,7 @@
       length: '4:04'
     - file: MEINE_LI.S3M
       length: '4:10'
-      name: meine ewige liebe ist mutiert zu tiefem hass
+      name: meine ewige liebe hat sich weiterentwickelt zu tiefem hass
     - file: VERG_RMX.S3M
       length: '6:35'
       name: vergessen (rmx)
@@ -262,7 +262,7 @@
       name: milch
     - file: ENDZEIT.S3M
       length: '7:25'
-      name: der gedanke an das ende is monoton
+      name: der gedanke an das ende ist monoton
     - file: BEWUST.S3M
       length: '10:27'
       name: hero mother
@@ -302,9 +302,6 @@
     - file: GRUEN.S3M
       length: '12:09'
       name: "grün (RMX)"
-    - file: OUTRO.S3M
-      length: '6:11'
-      name: outro
     - file: END1.S3M
       length: '7:25'
       name: der gedanke an das ende ist monoton (RMX)
@@ -314,12 +311,18 @@
     - file: ISOTOPE.S3M
       length: '10:25'
       name: isotope
+    - file: OUTRO.S3M
+      length: '6:11'
+      name: outro
 
 - path: ALONE
   name: ALONE
   description: |
     A lot of drum & base to my dear friends in Forst
   tracks:
+    - file: INTRO.S3M
+      length: '8:44'
+      name: intro
     - file: 98.S3M
       name: ''
     - file: ABSTURZ.S3M
@@ -336,18 +339,18 @@
       name: ''
     - file: DEPRESS.S3M
       length: '10:13'
-      name: ein happen depress...
-    - file: DUG(MOR).S3M
-      name: ''
+      name: ein happen depressiv vorm schlafen
     - file: DUG.S3M
       length: '9:39'
-      name: "DUG (Das Ungute Gefühl)"
+      name: "∙DUG∙ (Das Ungute Gefühl)"
     - file: DUG(R).S3M
       length: '10:14'
-      name: "DUG (RMX)"
+      name: "∙DUG∙ (RMX)"
     - file: DUG(R1).S3M
       length: '10:14'
-      name: "DUG (RMX)"
+      name: "∙DUG∙ (RMX)"
+    - file: DUG(MOR).S3M
+      name: '∙DUG∙ (MORE)'
     - file: EIS.S3M
       length: '7:11'
       name: visionäre eislandschaft
@@ -356,16 +359,11 @@
     - file: FREMD.S3M
       name: entfremdet
     - file: GIRL.S3M
-      name: ''
+      name: my girlfriend has the chance to kill
     - file: ICH.S3M
       length: '10:37'
       name: ich
-    - file: INTRO.S3M
-      length: '8:44'
-      name: intro
     - file: KRIMI.S3M
-      name: ''
-    - file: OUTRO.S3M
       name: ''
     - file: PAPPE.S3M
       name: die staats-pappe
@@ -384,11 +382,13 @@
     - file: RIDER.S3M
       name: ''
     - file: STAB.S3M
-      name: ''
+      name: stab und säule sind relativ
     - file: STAB1.S3M
       name: ''
     - file: STAB2.S3M
       name: ''
+    - file: OUTRO.S3M
+      name: 'outro'
 
 - path: ATOMIK
   name: Atomik Mikro Kosmos
@@ -425,22 +425,22 @@
       name: faschistenpack
     - file: SAMBA.S3M
       length: '15:37'
-      name: tussis mit depressiven gesichtsausdruck
+      name: tussis mit depressivem ausdruck
     - file: SAMBA1.S3M
       length: '9:24'
-      name: tussis mit depressiven gesichtsausdruck
+      name: tussis mit depressivem ausdruck II
     - file: MILCH(R).S3M
       length: '10:56'
       name: milch (rmx)
-    - file: OUTRO.S3M
-      length: '7:43'
-      name: outro
-    - file: D&B.S3M
-      length: '6:49'
-      name: space invaders
     - file: M(R)_1.S3M
       length: '13:52'
       name: milch (RMX II)
+    - file: D&B.S3M
+      length: '6:49'
+      name: space invaders
+    - file: OUTRO.S3M
+      length: '7:43'
+      name: outro
 
 - path: ATOMIK/MILCH
   name: Atomik Mikro Kosmos / MILCH
@@ -504,31 +504,31 @@
     After a couple of years of intensive *tracking* the quality of the songs became a lot better
     even though it was the same program with the same absurd memory limitations.
   tracks:
-    - file: GEGEN.S3M
-      length: '7:21'
-      name: gegen
+    - file: WOLKEN.S3M
+      length: '8:49'
+      name: wolken
     - file: GWOLKEN.S3M
       name: gegenwolken
     - file: LIE_INT.S3M
-      name: um mitzuteilen, dass alles einer lüge gleichkommt (intro)
+      name: um mitzuteilen, daß alles einer lüge gleichkommt (intro)
       length: "2:29"
     - file: LIE.S3M
-      name: um mitzuteilen, dass alles einer lüge gleichkommt
+      name: um mitzuteilen, daß alles einer lüge gleichkommt
       length: "10:28"
     - file: MONO.S3M
       length: '7:27'
       name: mono{ hoast }
+    - file: GEGEN.S3M
+      length: '7:21'
+      name: gegen
     - file: NONAME.S3M
       length: '9:14'
       name: ''
     - file: NOONE.S3M
-      name: noone but me
-    - file: WOLKEN.S3M
-      length: '8:49'
-      name: wolken
+      name: noone but me could really understand
     - file: WRONG.S3M
       length: '6:02'
-      name: could this be wrong?
+      name: 'could this be wrong{ ? }'
 
 - path: FILMTHEA/I
   name: filmtheater I
@@ -552,7 +552,7 @@
       name: not what you expected
     - file: GLAUBT.S3M
       length: '8:34'
-      name: manche menschen...
+      name: manche menschen verdrängen ihre emotionen bis zu unkenntlichkeit
     - file: HERBST.S3M
       length: '6:13'
       name: kinderherbst
@@ -561,7 +561,7 @@
       name: idiots and monkeys &
     - file: MASKS.S3M
       length: '8:20'
-      name: idiots with monkey faces
+      name: idiots with monkey-masks
     - file: MASSES.S3M
       length: '6:08'
       name: far from the masses
@@ -599,7 +599,7 @@
       name: but kNOw
     - file: POINT.S3M
       length: '8:49'
-      name: the point of self...
+      name: the point of self-existence in my life
     - file: TONTOT.S3M
       length: '8:57'
       name: tontot
@@ -625,18 +625,18 @@
     - file: BASCHRO.S3M
       name: BaSchRo
     - file: CHEMIE.S3M
-      name: ''
+      name: 3 stunden chemie ausfall
     - file: DEVIAT.S3M
       name: ''
     - file: DROGE.S3M
-      name: ''
+      name: diese droge, das ist...
     - file: DROGE1.S3M
-      name: ''
+      name: diese droge, das ist... (RMX)
     - file: KNALL.S3M
       length: '7:31'
-      name: knallfolie
+      name: 64 salutschüsse zu ehren der knallfolie
     - file: LIE_RMX.S3M
-      name: um mitzuteilen, dass alles einer lüge gleichkommt
+      name: um mitzuteilen, daß alles einer lüge gleichkommt
       length: '10:28'
     - file: MENTAL.S3M
       name: mental changes
@@ -657,7 +657,7 @@
     - file: TECH.S3M
       name: ''
     - file: WORTE.S3M
-      name: ''
+      name: fass das ma in worte
 
 - path: FILMTHEA/MUTATION
   name: filmtheater MUTATION
@@ -667,22 +667,24 @@
     At that time various people knew my tracks and i *sometimes* played in clubs, carrying ye olde
     386 and a cathode ray monitor to the dance floor.
   tracks:
+    - file: INTRO.S3M
+      name: intro
     - file: 120127.S3M
       name: ''
     - file: ALKOHOL.S3M
       length: '6:28'
       name: ALKOHOL
     - file: BINE.S3M
-      name: ''
+      name: bine
     - file: BINE1.S3M
-      name: ''
+      name: bine (anders)
     - file: CHAMBER.S3M
       name: chambers of mutation
     - file: CH_EPIL.S3M
       length: '0:58'
       name: chambers of mutation (epilog)
     - file: CHILL.S3M
-      name: ''
+      name: chillen&grillen
     - file: DAB.S3M
       name: ''
     - file: DUBLIN.S3M
@@ -704,8 +706,6 @@
     - file: HOLZ.S3M
       length: '5:35'
       name: holz ist
-    - file: INTRO.S3M
-      name: intro
     - file: JG.S3M
       name: ''
     - file: KANTE.S3M
@@ -719,7 +719,7 @@
     - file: MODUS.S3M
       name: modus
     - file: MONKEY.S3M
-      name: monkeys have reached...
+      name: monkeys have reached dangerous levels
     - file: MUTAT1.S3M
       name: ''
     - file: NEUE.S3M
@@ -732,7 +732,7 @@
       length: '6:57'
       name: strikt rythmus
     - file: STRIK_U.S3M
-      name: strikt rythmus (untanz)
+      name: strikt rythmus (untanzbar entrückt)
     - file: WOHN.S3M
       name: ''
 
@@ -742,10 +742,10 @@
     In the beginning i was **very much** against monotonic basedrum music. That changed.
   tracks:
     - file: ANATOM.S3M
-      name: anatomie eines kuhzüchters
+      name: die anatomie eines kuhzüchters
       length: '14:36'
     - file: ATROPIN.S3M
-      name: ''
+      name: atropin
     - file: BEAUTY.S3M
       length: '16:59'
       name: mono-beauty
@@ -820,15 +820,15 @@
       name: the animal in
     - file: TRIPPA.S3M
       length: '12:36'
-      name: durch das wurmloch gegangenes trippaar
+      name: durch das wurmloch gegangenes trippa
     - file: TSCHAEZZ.S3M
       name: ''
-    - file: ZLETCH(R.S3M
-      length: '12:21'
-      name: die wechselwirkung von alk und chemie
     - file: ZLETCH.S3M
       length: '12:21'
       name: die wechselwirkung von alk und chemie
+    - file: ZLETCH(R.S3M
+      length: '12:21'
+      name: die wechselwirkung von alk und chemie (RMX)
     - file: OUTRO.S3M
       length: '8:34'
       name: outro
@@ -850,13 +850,13 @@
       name: intro
     - file: 99.S3M
       length: '6:33'
-      name: zukunftsvisionen
+      name: zukunftsvisionen für 99
     - file: BLACK.S3M
       length: '8:26'
       name: schwarz
     - file: DOORS.S3M
       length: '2:05'
-      name: doors of perception
+      name: doors of perception (intro)
     - file: EIS.S3M
       length: '7:11'
       name: visionäre eislandschaft
@@ -881,7 +881,7 @@
     - file: MICRO.S3M
       length: '8:56'
       name: micro
-    - file: SCHLUESS.S3M
+    - file: schlüsselszenen
       name: ''
     - file: SHORT.S3M
       name: short waylayed freedom
@@ -897,10 +897,10 @@
       length: '8:37'
       name: visionäre eiswelt
     - file: EXTRA.S3M
-      name: intuitive extraordinations
+      name: intuitive extraordination
       length: '8:44'
     - file: KATS.S3M
-      name: flirting of three fat cats
+      name: flirting of three fat kats
       length: '8:43'
     - file: KIFF(IN).S3M
       length: '3:07'
@@ -928,9 +928,13 @@
   ordering: null
   path: TRASH1
   description:
-    There was a TRASH folder where songs were stored that did not fit to a particular album. 
-    Over time, a lot of stuff landed there. No way to put it in chronological order any more.
+    The TRASH folders stored songs that did not fit to the current project,
+    or were plainly just the `x`th remix of something else. 
+    Over time, a couple of stuff landed there. No way to put it in chronological order any more.
   tracks:
+    - file: LSD.S3M
+      length: '10:59'
+      name: intro
     - file: BASE.S3M
       name: ''
     - file: BASE1.S3M
@@ -967,9 +971,6 @@
     - file: LALALA.S3M
       length: '7:08'
       name: ''
-    - file: LSD.S3M
-      length: '10:59'
-      name: intro
     - file: OHNE_BL.S3M
       length: '5:41'
       name: ohne bleiche
@@ -980,7 +981,7 @@
       name: ''
     - file: SEHNSUCH.S3M
       length: '5:37'
-      name: sehnsucht nach dem ...
+      name: sehnsucht nach dem alten schmerzz
     - file: STILLE.S3M
       name: IMPM
     - file: STRANGE.S3M
@@ -993,7 +994,7 @@
       name: ''
     - file: ZEIT.S3M
       length: '5:55'
-      name: in einer zeit vor...
+      name: in einer zeit, vor unserem Land
 
 - name: TRASH1/MICT
   ordering: null
@@ -1018,14 +1019,15 @@
   ordering: null
   path: TRASH2
   tracks:
+    - file: INTRO.S3M
+      name: ''
+    - file: INTRO2.S3M
+      name: ''
     - file: BOI.S3M
       name: die boikrupp
     - file: BREAK.S3M
       length: '7:29'
       name: fick die prodigy
-    - file: BREAK1.S3M
-      length: '6:11'
-      name: outro
     - file: COOL.S3M
       name: ''
     - file: COOL1.S3M
@@ -1044,7 +1046,7 @@
       name: ''
     - file: FAT1.S3M
       length: '18:14'
-      name: fat freddy's cat II
+      name: fat freddy's cat
     - file: GMF.S3M
       name: ''
     - file: GUIT.S3M
@@ -1052,10 +1054,6 @@
     - file: GUIT1.S3M
       name: ''
     - file: HACHT.S3M
-      name: ''
-    - file: INTRO.S3M
-      name: ''
-    - file: INTRO2.S3M
       name: ''
     - file: KDFJHG.S3M
       name: ''
@@ -1078,10 +1076,6 @@
     - file: NAMELESS.S3M
       name: ''
     - file: OLDSCHOO.S3M
-      name: ''
-    - file: OUTRO.S3M
-      name: ''
-    - file: OUTRO1.S3M
       name: ''
     - file: P&M.S3M
       name: ''
@@ -1109,6 +1103,13 @@
       name: ''
     - file: WUT.S3M
       name: wut und so
+    - file: BREAK1.S3M
+      length: '6:11'
+      name: outro
+    - file: OUTRO.S3M
+      name: ''
+    - file: OUTRO1.S3M
+      name: ''
 
 - name: TRASH3
   ordering: null

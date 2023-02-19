@@ -4,6 +4,7 @@
   --color-front: #eee;
   --color-front-hl: #ddd;
   --color-front-darker: #bbb;
+  --color-dark: #555;
 
   --color-face: #444;
   --color-face-hl: #666;
@@ -89,6 +90,13 @@ body {
       background: var(--color-playsym);
       border-radius: 2px;
     }
+  }
+
+  .left-right {
+    display: flex;
+    justify-content: space-between;
+    div { flex-grow: 1; }
+    .right { flex-grow: 0; margin-left: .5rem; }
   }
 
   @keyframes activeInstrument {
@@ -185,6 +193,11 @@ body {
                 background: var(--color-back);
                 animation: .5s infinite alternate playSymbolBlink;
               }
+            }
+            .track-length {
+              font-family: "unscii16", monospace;
+              font-size: 75%;
+              color: var(--color-dark);
             }
           }
         } // .tracks

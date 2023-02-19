@@ -5,6 +5,7 @@ from io import StringIO
 from typing import List, Optional, IO
 
 import yaml
+from tqdm import tqdm
 
 from src import PROJECT_PATH
 from src.s3m import S3m
@@ -54,9 +55,10 @@ class Records:
 
     def web_index(self) -> dict:
         index = {
-            "records": []
+            "play_time": 0,
+            "records": [],
         }
-        for i, record in enumerate(self.records):
+        for i, record in enumerate(tqdm(self.records, desc="records")):
             index_record = {
                 **record,
                 "tracks": [],
@@ -65,24 +67,43 @@ class Records:
             for j, track in enumerate(record["tracks"]):
                 module = S3m.from_file(self.MODULE_PATH / record["path"] / track["file"])
                 instruments = []
-                for inst in module.instruments:
+                for inst_idx, inst in enumerate(module.instruments):
                     if inst.title:
                         instruments.append({
-                            "type": inst.type,
+                            "index": inst_idx,
                             "name": inst.title,
                             "length": inst.length,
                         })
                     else:
                         if not instruments or instruments[-1]["name"]:
-                            instruments.append({"name": ""})
+                            instruments.append({"index": inst_idx, "name": ""})
+
+                length = track.get("length")
+                if length:
+                    while len(length) < 5:
+                        length = f" {length}"
+                else:
+                    try:
+                        sec = module.calc_length_ffmpeg()
+                        length = f"{sec//60}:{sec%60:02}"
+                    except RuntimeError:
+                        length = "??:??"
 
                 index_record["tracks"].append({
                     **track,
                     "index": j,
                     "record_index": i,
+                    "length": length,
                     "instruments": instruments,
                 })
+                if not length.startswith("?"):
+                    m, s = (int(i) for i in length.split(":"))
+                    index["play_time"] += m * 60 + s
+
             index["records"].append(index_record)
+
+        sec = index["play_time"]
+        index["play_time"] = f"{sec//60}:{sec%60:02}"
         return index
 
 

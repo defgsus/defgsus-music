@@ -4,6 +4,8 @@ Based on https://github.com/jangler/s3mml
 import struct
 import dataclasses
 from pathlib import Path
+import subprocess
+import re
 from typing import IO, Union, Optional, Tuple, List, Generator
 
 
@@ -162,6 +164,26 @@ class S3m:
             order_idx += 1
 
         return n_sec
+
+    def calc_length_ffmpeg(self) -> int:
+        assert self.header.filename, "Can only do this with files"
+        proc = subprocess.Popen(
+            ["ffmpeg", "-i", self.header.filename],
+            stderr=subprocess.PIPE,
+            stdout=subprocess.DEVNULL,
+        )
+        """
+        Duration: 00:01:58.68, bitrate: 10 kb/s
+        """
+        output = proc.stderr.read().decode()
+        proc.wait()
+        expr = re.compile(r"\s*Duration:\s*(\d\d):(\d\d):(\d\d).*")
+        for line in output.splitlines():
+            match = expr.match(line)
+            if match:
+                h, m, s = (int(i.lstrip("0") or 0) for i in match.groups())
+                return (h * 60 + m) * 60 + s
+        raise RuntimeError(f"No Duation in ffmpeg output for {self.header.filename}:\n{output}")
 
     @classmethod
     def dump_pattern(cls, pattern: PatternType, file=None):
