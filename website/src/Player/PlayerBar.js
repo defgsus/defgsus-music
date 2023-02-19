@@ -1,14 +1,19 @@
 import {useContext, useEffect, useRef, useState} from "react";
 import Scroller from "./Scroller";
 import {appContext} from "../App";
+import Pattern from "./Pattern";
 
 
 const PlayerBar = () => {
 
-    const {records, total_play_time, song, playing_song, set_song, play_song, player} = useContext(appContext);
+    const {
+        records, total_play_time, song, playing_song, set_song, play_song, player,
+        pattern_visible, set_pattern_visible,
+    } = useContext(appContext);
 
     const [text, set_text] = useState("");
     const [pos_text, set_pos_text] = useState("");
+    const [] = useState(false);
 
     const buttons = [
         {
@@ -25,6 +30,11 @@ const PlayerBar = () => {
             title: "ST0P",
             disabled: !player.ready || !player.playing,
             onClick: () => player.stop(),
+        },
+        {
+            title: pattern_visible ? "HID3" : "PATT3RN",
+            disabled: !pattern_visible && (!player.ready || !player.playing),
+            onClick: () => set_pattern_visible(!pattern_visible),
         }
     ];
 
@@ -54,7 +64,7 @@ const PlayerBar = () => {
     }, [player]);
 
     return (
-        <div className={"player-bar"}>
+        <div className={"player-bar" + (pattern_visible ? " big" : "")}>
             <Scroller
                 onClick={() => { if (playing_song) set_song(playing_song)}}
                 className={"clickable"}
@@ -74,10 +84,13 @@ const PlayerBar = () => {
                             </button>
                         ))}
                     </div>
-                    <div className={"right"}>
+                    <div className={"right pos-text"}>
                         {pos_text}
                     </div>
                 </div>
+                {!pattern_visible ? null : (
+                    <Pattern player={player}/>
+                )}
             </div>
         </div>
     )

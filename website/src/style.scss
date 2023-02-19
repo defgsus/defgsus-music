@@ -14,8 +14,10 @@
 
   --color-playsym: #484;
   --color-back-played: #464;
+  --color-pattern-active: #4d5e60;
 
   --player-bar-small: 4.5rem;
+  --player-bar-big: 40rem;
 }
 
 @font-face {
@@ -45,6 +47,9 @@ body {
     max-width: 50rem;
     margin: .2rem auto;
     padding-bottom: var(--player-bar-small);
+    &.big {
+      padding-bottom: var(--player-bar-big);
+    }
   }
 
   h3 {
@@ -241,11 +246,15 @@ body {
     bottom: 0;
     height: var(--player-bar-small);
     border-top: 1px solid var(--color-player-back-hl);
+    &.big {
+      height: var(--player-bar-big);
+    }
     button {
       font-family: unscii16, monospace;
       font-size: 30px;
       margin-right: .2rem;
     }
+
     .text-scroller-container {
       position: relative;
       .text-scroller {
@@ -263,10 +272,25 @@ body {
       margin: .2rem;
     }
 
-    .pattern {
-      .pattern-row {
-        div {
-          margin-right: .5rem;
+    .pos-text {
+      font-size: 30px;
+    }
+
+    .pattern-container {
+      display: flex;
+      background: var(--color-back);
+      margin-top: .2rem;
+
+      .pattern {
+        margin: 0 auto;
+        .pattern-row {
+          &.active {
+            background: var(--color-pattern-active);
+          }
+
+          div {
+            margin-right: .5rem;
+          }
         }
       }
     }

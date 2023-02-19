@@ -29,6 +29,7 @@ const App = () => {
     const [player_ended, set_player_ended] = useState(false);
     const [current_hash, set_current_hash] = useState(window.location.hash);
     const [first_hash, set_first_hash] = useState(true);
+    const [pattern_visible, set_pattern_visible] = useState(false);
 
     const update_player_state = () => {
         const player = playerRef.current;
@@ -213,8 +214,9 @@ const App = () => {
             play_song,
             play_next_song,
             player: player_state,
+            pattern_visible, set_pattern_visible,
         }}>
-            <div className={"app-wrapper"}>
+            <div className={"app-wrapper" + (pattern_visible ? " big" : "")}>
                 <h3><i>def.gsus-</i> music 1996-2001</h3>
                 <Records/>
             </div>
