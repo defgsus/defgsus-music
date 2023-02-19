@@ -5,10 +5,8 @@ from io import StringIO
 from typing import List, Optional, IO
 
 import yaml
-from tqdm import tqdm
 
-from src import PROJECT_PATH
-from src.s3m import S3m
+from src import PROJECT_PATH, MODULE_PATH
 
 
 def parseargs():
@@ -23,11 +21,10 @@ def parseargs():
 
 class Records:
 
-    MODULE_PATH = Path(__file__).resolve().parent.parent / "MODULE"
     GITHUB_PATH = "https://raw.githubusercontent.com/defgsus/defgsus-music/master"
 
     def __init__(self):
-        with (self.MODULE_PATH / "index.yml").open() as fp:
+        with (MODULE_PATH / "index.yml").open() as fp:
             self.records = yaml.safe_load(fp)
 
     def print_markdown(self, file: Optional[IO[str]] = None):
@@ -37,8 +34,11 @@ class Records:
 
             if record.get("graphics"):
                 for filename in record["graphics"]:
-                    print(f'[{filename.split(".")[0]}]({record_path}/{filename})', file=file)
+                    print(f'![{filename.split(".")[0]}]({record_path}/{filename})', file=file)
                 print(file=file)
+
+            if record.get("description"):
+                print(f'\n{record["description"]}\n', file=file)
 
             for track in record["tracks"]:
                 name = track.get("name")
@@ -53,59 +53,6 @@ class Records:
 
             print(file=file)
 
-    def web_index(self) -> dict:
-        index = {
-            "play_time": 0,
-            "records": [],
-        }
-        for i, record in enumerate(tqdm(self.records, desc="records")):
-            index_record = {
-                **record,
-                "tracks": [],
-                "index": i,
-            }
-            for j, track in enumerate(record["tracks"]):
-                module = S3m.from_file(self.MODULE_PATH / record["path"] / track["file"])
-                instruments = []
-                for inst_idx, inst in enumerate(module.instruments):
-                    if inst.title:
-                        instruments.append({
-                            "index": inst_idx,
-                            "name": inst.title,
-                            "length": inst.length,
-                        })
-                    else:
-                        if not instruments or instruments[-1]["name"]:
-                            instruments.append({"index": inst_idx, "name": ""})
-
-                length = track.get("length")
-                if length:
-                    while len(length) < 5:
-                        length = f" {length}"
-                else:
-                    try:
-                        sec = module.calc_length_ffmpeg()
-                        length = f"{sec//60}:{sec%60:02}"
-                    except RuntimeError:
-                        length = "??:??"
-
-                index_record["tracks"].append({
-                    **track,
-                    "index": j,
-                    "record_index": i,
-                    "length": length,
-                    "instruments": instruments,
-                })
-                if not length.startswith("?"):
-                    m, s = (int(i) for i in length.split(":"))
-                    index["play_time"] += m * 60 + s
-
-            index["records"].append(index_record)
-
-        sec = index["play_time"]
-        index["play_time"] = f"{sec//60//60}h{(sec//60)%60:02}m{sec%60:02}s"
-        return index
-
 
 def patch_readme(records: Records, write: bool = False):
     file = StringIO()
@@ -113,13 +60,13 @@ def patch_readme(records: Records, write: bool = False):
     file.seek(0)
     index = file.read()
 
-    readme = Path("README.md").read_text()
+    readme = (PROJECT_PATH / "README.md").read_text()
     readme = readme[:readme.find("---------\n") + 10] + "\n" + index
 
     if not write:
         print(readme)
     else:
-        Path("README.md").write_text(readme)
+        (PROJECT_PATH / "README.md").write_text(readme)
 
 
 def main(command: str):
@@ -130,7 +77,7 @@ def main(command: str):
     #            print(record["path"], track["file"])
 
     if command == "web-index":
-        (PROJECT_PATH / "website" / "src" / "index.jsontxt").write_text(json.dumps(records.web_index()))
+        (PROJECT_PATH / "website" / "src" / "index.jsontxt").write_text(json.dumps(records.records))
 
     elif command == "dump-readme":
         patch_readme(records)
