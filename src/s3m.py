@@ -80,7 +80,7 @@ class S3m:
     def __init__(self):
         self.header = Header()
         self.instruments: List[Instrument] = []
-        self.patterns: List[ChannelRow] = []
+        self.patterns: List[List[List[ChannelRow]]] = []
 
     @classmethod
     def from_bytes(cls, buf: bytes) -> "S3m":
@@ -106,6 +106,99 @@ class S3m:
             if pattern_idx == 255:
                 break
             yield pattern_idx, self.patterns[pattern_idx]
+
+    def calc_length(self) -> float:
+        """
+        Calculate length in seconds
+        """
+        n_rows = 0
+        n_sec = 0.
+        tempo = self.header.initialtempo
+        speed = self.header.initialspeed
+
+        order_idx = 0
+        next_row = 0
+        while order_idx < len(self.header.orderlist):
+            pattern_idx = self.header.orderlist[order_idx]
+            if pattern_idx == 255:
+                break
+            pattern = self.patterns[pattern_idx]
+
+            if next_row:
+                pattern = pattern[next_row:]
+                next_row = 0
+
+            for row in pattern:
+                n_rows += 1
+
+                #n_sec += 60. / tempo / 8 * (4 / speed)
+                rows_per_second = tempo / speed
+                n_sec += 2.495 / rows_per_second
+
+                break_pattern = False
+                for ch in row:
+                    if ch:
+                        if ch.effect == 1:  # "A" set speed
+                            if ch.param > 0:
+                                speed = ch.param
+                        if ch.effect == 2:  # "B" jump to order
+                            #print("new order_idx", order_idx, "->", ch.param)
+                            # self.dump_pattern(pattern)
+                            if ch.param > order_idx:
+                                order_idx = ch.param - 1  # will be increased
+                                break_pattern = True
+                                break
+                        if ch.effect == 3:  # "C" break pattern to row
+                            next_row = ((ch.param & 0xf0) >> 4) * 10 + ch.param & 0x0f
+                            break_pattern = True
+                            break
+                        if ch.effect == 20:  # "T" set tempo
+                            if ch.param > tempo:
+                                tempo = ch.param
+
+                if break_pattern:
+                    break
+
+            order_idx += 1
+
+        return n_sec
+
+    @classmethod
+    def dump_pattern(cls, pattern: PatternType, file=None):
+
+        def _note_str(n: Optional[int]) -> str:
+            if n is None:
+                return "..."
+            if n == 254:
+                return "^^^"
+            return f"{NOTE_NAMES[n % 12]}{n // 12:x}"
+
+        def _effect_str(n: Optional[ChannelRow]) -> str:
+            if n is None or (n.effect is None and n.param is None):
+                return "..."
+
+            s = "." if n.effect is None else chr(n.effect + ord("A") - 1)
+            s += ".." if n.param in (None, 0) else f"{n.param:02x}"
+            if n.effect in (1, 2, 3, 20):
+                s = f"\033[1;32m{s}\033[0m"
+            return s
+
+        for row in pattern:
+            for ch in row[:16]:
+                if not ch:
+                    print("... .. .. ...", end="|", file=file)
+                else:
+                    print(
+                        " ".join((
+                            _note_str(ch.note),
+                            ".." if ch.instrument is None else f"{ch.instrument:02}",
+                            ".." if ch.volume is None else f"{ch.volume:02x}",
+                            _effect_str(ch),
+                        )),
+                        end="|",
+                        file=file,
+                    )
+            print(file=file)
 
     def _to_string(self, b: bytes) -> str:
         return b.decode(self.character_encoding).strip("\0")

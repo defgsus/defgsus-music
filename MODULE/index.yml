@@ -158,7 +158,7 @@
       name: the haze
     - file: MARKTPLA.S3M
       name: boris b sein marktplazz
-      length: 4:04
+      length: '4:04'
     - file: MEINE_LI.S3M
       length: '4:10'
       name: meine ewige liebe ist mutiert zu tiefem hass
@@ -578,19 +578,19 @@
       length: '1:22'
       name: intro
     - file: BLIND.S3M
-      name: die augen eines blinden kuhzüchters
-      length: 8:30
+      name: die augen eines blinden I
+      length: '8:30'
     - file: BLIND1.S3M
-      name: die augen eines blinden kuhzüchters
-      length: 9:05
+      name: die augen eines blinden ][
+      length: '9:05'
     - file: BLIND2.S3M
-      name: die augen eines blinden kuhzüchters
-      length: 6:21
+      name: die augen eines blinden ]I[
+      length: '6:21'
     - file: CRY.S3M
       length: '5:24'
       name: i cry for all of us
     - file: HATE.S3M
-      name: sometimes, i hate...
+      name: sometimes, i hate everybody
     - file: NO.S3M
       length: '3:42'
       name: 'no'
@@ -613,6 +613,9 @@
 - path: FILMTHEA/III
   name: filmtheater III
   tracks:
+    - file: INTRO_3.S3M
+      name: die augen eines blinden
+      length: '6:43'
     - file: ANDYW.S3M
       length: '7:31'
       name: velvet warhole
@@ -620,7 +623,7 @@
       length: '7:31'
       name: velvet warhole (RMX)
     - file: BASCHRO.S3M
-      name: ''
+      name: BaSchRo
     - file: CHEMIE.S3M
       name: ''
     - file: DEVIAT.S3M
@@ -629,15 +632,12 @@
       name: ''
     - file: DROGE1.S3M
       name: ''
-    - file: INTRO_3.S3M
-      name: die augen eines blinden kuhzüchters
-      length: 6:43
     - file: KNALL.S3M
       length: '7:31'
       name: knallfolie
     - file: LIE_RMX.S3M
       name: um mitzuteilen, dass alles einer lüge gleichkommt
-      length: 10:28
+      length: '10:28'
     - file: MENTAL.S3M
       name: mental changes
     - file: PILZ.S3M
@@ -650,7 +650,7 @@
       name: trotzdem sehen
     - file: SOUNNGG.S3M
       name: der song der zuviel wußte
-      length: 15:38
+      length: '15:38'
     - file: SYSTEM.S3M
       length: '5:00'
       name: system der macht
@@ -679,7 +679,7 @@
     - file: CHAMBER.S3M
       name: chambers of mutation
     - file: CH_EPIL.S3M
-      length: 0:58
+      length: '0:58'
       name: chambers of mutation (epilog)
     - file: CHILL.S3M
       name: ''
@@ -743,7 +743,7 @@
   tracks:
     - file: ANATOM.S3M
       name: anatomie eines kuhzüchters
-      length: 14:36
+      length: '14:36'
     - file: ATROPIN.S3M
       name: ''
     - file: BEAUTY.S3M
@@ -788,13 +788,13 @@
       name: ''
     - file: MODULA.S3M
       name: die wunderbare welt der frequenzmodulation
-      length: 11:44
+      length: '11:44'
     - file: MUCKE(1).S3M
       length: '13:44'
       name: keine mucke zum verstehn
     - file: MUCKE(2).S3M
       length: '13:44'
-      name: keine mucke zum verstehn
+      name: keine mucke zum verstehn II
     - file: NARCOTIC.S3M
       length: '14:23'
       name: the narcotic choice
@@ -898,10 +898,10 @@
       name: visionäre eiswelt
     - file: EXTRA.S3M
       name: intuitive extraordinations
-      length: 8:44
+      length: '8:44'
     - file: KATS.S3M
       name: flirting of three fat cats
-      length: 8:43
+      length: '8:43'
     - file: KIFF(IN).S3M
       length: '3:07'
       name: der mariujahna-konsum als basis der überlegung (intro)
@@ -1009,7 +1009,7 @@
       name: ''
     - file: SATIVA.S3M
       name: sativa
-      length: 9.38
+      length: '9:38'
     - file: SATIVA2.S3M
       length: '7:56'
       name: sativa II
