@@ -8,7 +8,7 @@ import TrackInfo from "./TrackInfo";
 const Records = () => {
 
     const {
-        records, record, song, playing_song,
+        records, record, song, playing_song, player,
         set_record, set_song, play_song,
     } = useContext(appContext);
 
@@ -73,7 +73,9 @@ const Records = () => {
                                                 }
                                             >
                                                 <div
-                                                    className={"play-symbol"}
+                                                    className={
+                                                        "play-symbol" + (player?.playing && playing_track ? " playing" : "")
+                                                    }
                                                     onClick={(e) => {
                                                         e.preventDefault();
                                                         e.stopPropagation();

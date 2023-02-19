@@ -13,8 +13,13 @@ const PlayerBar = () => {
     const buttons = [
         {
             title: "P1AY",
-            disabled: !player.ready || player.playing,
-            onClick: () => player.play(),
+            disabled: player.playing || !(playing_song || song),
+            onClick: () => {
+                if (!player.ready)
+                    play_song(playing_song || song);
+                else
+                    player.play()
+            },
         },
         {
             title: "ST0P",

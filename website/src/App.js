@@ -27,6 +27,8 @@ const App = () => {
     const timeoutRef = useRef();
     const [player_state, set_player_state] = useState({});
     const [player_ended, set_player_ended] = useState(false);
+    const [current_hash, set_current_hash] = useState(window.location.hash);
+    const [first_hash, set_first_hash] = useState(true);
 
     const update_player_state = () => {
         const player = playerRef.current;
@@ -82,6 +84,11 @@ const App = () => {
         };
     };
 
+    const on_hash_change = (event) => {
+        const hash = new URL(event.newURL).hash;
+        set_current_hash(hash);
+    };
+
     useEffect(() => {
         hook_to_player(playerRef.current);
         update_player_state();
@@ -110,6 +117,35 @@ const App = () => {
         }
     }, [player_ended]);
 
+    useEffect(() => {
+        window.addEventListener('hashchange', on_hash_change);
+    }, [window]);
+
+    // url hash change
+    useEffect(() => {
+        if (first_hash) {
+            set_first_hash(false);
+        }
+        let path = current_hash?.split("/");
+        if (path?.length >= 2) {
+            const file = path[path.length - 1];
+            path = path.slice(0, path.length - 1).join("/").slice(1);
+            const rec = context_value.records.find(r => r.path === path)
+            if (rec) {
+                const song = rec.tracks.find(t => t.file === file);
+                if (song && !(
+                    song.index === context_value.playing_song?.index
+                 && song.record_index === context_value.playing_song?.record_index)
+                ) {
+                    if (first_hash)
+                        set_song(song, false);
+                    else
+                        play_song(song, true);
+                }
+            }
+        }
+    }, [current_hash]);
+
     const set_record = (record) => {
         set_context_value({
             ...context_value,
@@ -118,7 +154,7 @@ const App = () => {
         });
     };
 
-    const set_song = (song) => {
+    const set_song = (song, auto_play=true) => {
         if (!song) {
             set_context_value({
                 ...context_value,
@@ -132,7 +168,7 @@ const App = () => {
             record,
             song,
         };
-        if (!player_state.playing)
+        if (auto_play && !player_state.playing)
             new_state.playing_song = song;
         set_context_value(new_state);
     };
@@ -142,9 +178,13 @@ const App = () => {
             ...context_value,
             playing_song: song,
         };
-        if (song && view)
+        if (song && view) {
             new_state.song = song;
+            new_state.record = context_value.records[song.record_index];
+        }
         set_context_value(new_state);
+        const record = context_value.records[song.record_index];
+        window.location.hash = `#${record.path}/${song.file}`;
     };
 
     const play_next_song = () => {

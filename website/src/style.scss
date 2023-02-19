@@ -15,7 +15,7 @@
   --color-playsym: #484;
   --color-back-played: #464;
 
-  --player-bar-small: 3.3rem;
+  --player-bar-small: 4.5rem;
 }
 
 @font-face {
@@ -193,7 +193,9 @@ body {
             &.playing {
               .play-symbol {
                 background: var(--color-back);
-                animation: .5s infinite alternate playSymbolBlink;
+                &.playing {
+                  animation: .5s infinite alternate playSymbolBlink;
+                }
               }
             }
             .track-length {
@@ -241,6 +243,7 @@ body {
     border-top: 1px solid var(--color-player-back-hl);
     button {
       font-family: unscii16, monospace;
+      font-size: 30px;
       margin-right: .2rem;
     }
     .text-scroller-container {
