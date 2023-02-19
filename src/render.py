@@ -103,7 +103,7 @@ class Records:
             index["records"].append(index_record)
 
         sec = index["play_time"]
-        index["play_time"] = f"{sec//60}:{sec%60:02}"
+        index["play_time"] = f"{sec//60//60}h{(sec//60)%60:02}m{sec%60:02}s"
         return index
 
 

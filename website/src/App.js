@@ -10,6 +10,7 @@ const records_data = JSON.parse(records_json);
 
 const DEFAULT_CONTEXT = {
     records: records_data.records,
+    total_play_time: records_data.play_time,
     record: null,
     song: null,
     playing_song: null,

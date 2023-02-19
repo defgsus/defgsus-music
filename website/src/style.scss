@@ -15,7 +15,7 @@
   --color-playsym: #484;
   --color-back-played: #464;
 
-  --player-bar-small: 4rem;
+  --player-bar-small: 3.3rem;
 }
 
 @font-face {
@@ -50,6 +50,8 @@ body {
   h3 {
     text-align: center;
   }
+
+  .clickable { cursor: pointer; }
 
   .small-image {
     width: 50px;
@@ -229,6 +231,7 @@ body {
   } // .records
 
   .player-bar {
+    font-family: unscii16, monospace;
     background: var(--color-player-back);
     display: block;
     width: 100%;
@@ -236,7 +239,10 @@ body {
     bottom: 0;
     height: var(--player-bar-small);
     border-top: 1px solid var(--color-player-back-hl);
-
+    button {
+      font-family: unscii16, monospace;
+      margin-right: .2rem;
+    }
     .text-scroller-container {
       position: relative;
       .text-scroller {
@@ -248,6 +254,10 @@ body {
           font-size: 1.5rem;
         }
       }
+    }
+
+    .playbar-content {
+      margin: .2rem;
     }
 
     .pattern {

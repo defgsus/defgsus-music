@@ -881,8 +881,8 @@
     - file: MICRO.S3M
       length: '8:56'
       name: micro
-    - file: schlüsselszenen
-      name: ''
+    - file: SCHLUESS.S3M
+      name: schlüsselszenen
     - file: SHORT.S3M
       name: short waylayed freedom
     - file: TRICK.S3M
