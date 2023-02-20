@@ -23,6 +23,7 @@ export const appContext = createContext(DEFAULT_CONTEXT);
 const App = () => {
 
     const [context_value, set_context_value] = useState(DEFAULT_CONTEXT);
+
     const playerRef = useRef(new ModPlayer());
     const timeoutRef = useRef();
     const [player_state, set_player_state] = useState({});
@@ -190,7 +191,6 @@ const App = () => {
 
     const play_next_song = () => {
         const song = context_value.playing_song;
-        console.log("X", song)
         if (song) {
             const is_viewed = context_value.playing_song.index === context_value.song?.index
                                 && context_value.playing_song.record_index === context_value.song?.record_index;

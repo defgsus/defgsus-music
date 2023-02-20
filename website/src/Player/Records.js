@@ -16,7 +16,7 @@ const Records = () => {
         <div
             className={"records"}
         >
-            {records.map((rec, i) => {
+            {records?.map((rec, i) => {
                 const selected_record = rec.index === record?.index;
                 return (
                     <div className={"record-wrapper"} key={i}>

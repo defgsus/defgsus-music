@@ -7,7 +7,7 @@ from typing import List, Optional, IO
 import yaml
 from tqdm import tqdm
 
-from src import PROJECT_PATH
+from src import PROJECT_PATH, MODULE_PATH, GITHUB_PATH
 from src.s3m import S3m
 
 
@@ -21,24 +21,39 @@ def parseargs():
     return vars(parser.parse_args())
 
 
+def escape_md(s: str) -> str:
+    chars = "()[]"
+    for c in chars:
+        s = s.replace(c, f"\\{c}")
+    return s
+
+
+def md_link(title: str, url: str) -> str:
+    return f"[{escape_md(title)}]({escape_md(url)})"
+
+
+def md_image(title: str, url: str) -> str:
+    return f"!{md_link(title, url)}"
+
+
 class Records:
 
-    MODULE_PATH = Path(__file__).resolve().parent.parent / "MODULE"
-    GITHUB_PATH = "https://raw.githubusercontent.com/defgsus/defgsus-music/master"
-
     def __init__(self):
-        with (self.MODULE_PATH / "index.yml").open() as fp:
+        with (MODULE_PATH / "index.yml").open() as fp:
             self.records = yaml.safe_load(fp)
 
-    def print_markdown(self, file: Optional[IO[str]] = None):
+    def print_readme(self, file: Optional[IO[str]] = None):
         for record in self.records:
             record_path = f'./MODULE/{record["path"]}'
-            print(f'\n## [{record["name"]}]({record_path})\n', file=file)
+            print(f'\n## {md_link(record["name"], record_path)}\n', file=file)
 
             if record.get("graphics"):
                 for filename in record["graphics"]:
-                    print(f'[{filename.split(".")[0]}]({record_path}/{filename})', file=file)
+                    print(md_image(filename.split(".")[0], f"{record_path}/{filename}"), file=file)
                 print(file=file)
+
+            if record.get("description"):
+                print("\n" + record["description"] + "\n", file=file)
 
             for track in record["tracks"]:
                 name = track.get("name")
@@ -46,10 +61,9 @@ class Records:
                     name = track["file"]
 
                 true_filename = (
-                    f'{self.GITHUB_PATH}/MODULE/{record["path"]}/{track["file"]}'
+                    f'{GITHUB_PATH}/MODULE/{record["path"]}/{track["file"]}'
                 )
-                true_filename = true_filename.replace("(", r"\(").replace(")", r"\)")
-                print(f'  - [{name}]({true_filename})', file=file)
+                print(f'- {md_link(name, true_filename)}', file=file)
 
             print(file=file)
 
@@ -65,13 +79,13 @@ class Records:
                 "index": i,
             }
             for j, track in enumerate(record["tracks"]):
-                module = S3m.from_file(self.MODULE_PATH / record["path"] / track["file"])
+                module = S3m.from_file(MODULE_PATH / record["path"] / track["file"])
                 instruments = []
                 for inst_idx, inst in enumerate(module.instruments):
                     if inst.title:
                         instruments.append({
                             "index": inst_idx,
-                            "name": inst.title,
+                            "name": inst.title.replace("\0", " "),
                             "length": inst.length,
                         })
                     else:
@@ -109,7 +123,7 @@ class Records:
 
 def patch_readme(records: Records, write: bool = False):
     file = StringIO()
-    records.print_markdown(file=file)
+    records.print_readme(file=file)
     file.seek(0)
     index = file.read()
 
@@ -124,10 +138,6 @@ def patch_readme(records: Records, write: bool = False):
 
 def main(command: str):
     records = Records()
-    #for record in records.records:
-    #    for track in record["tracks"]:
-    #        if "(" in track["file"]:
-    #            print(record["path"], track["file"])
 
     if command == "web-index":
         (PROJECT_PATH / "website" / "src" / "index.jsontxt").write_text(json.dumps(records.web_index()))
