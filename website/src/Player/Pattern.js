@@ -23,16 +23,28 @@ const Pattern = ({player}) => {
                     const row = [];
                     for (let x = 0; x < player.num_channels; ++x) {
                         const idx = (y * player.num_channels + x) * 5;
-                        const value = player.pattern[idx];
+                        const note = player.pattern[idx];
+                        const vol = player.pattern[idx + 2];
+                        let bright = 0;
+                        let note_str = ". .";
+                        if (note === 255) {
+                        } else if (note === 254) {
+                            note_str = "^^^";
+                            bright = 9;
+                        } else {
+                            note_str = note_to_name(note & 127).slice(0, 3);
+                            bright = Math.floor(Math.pow(vol / 256, .6) * 10);
+                        }
                         row.push(
-                            <div key={x}>
-                                {(value === 255 ? "." : note_to_name(value & 127)).padEnd(4, ".")}
+                            <div
+                                key={x}
+                                className={`bright-${bright}`}
+                            >
+                                {note_str}
                             </div>
                         );
                     }
-                    new_rows.push(
-                        row
-                    );
+                    new_rows.push(row);
                 }
             }
             set_rows(new_rows)
@@ -49,9 +61,11 @@ const Pattern = ({player}) => {
                         {rows.slice(offset).map((row, i) => (
                             <div
                                 key={i + offset}
-                                className={"flex pattern-row" + (
-                                    i + offset === player.row ? " active" : ""
-                                )}
+                                className={
+                                    "flex pattern-row"
+                                    + (i + offset === player.row ? " active" : "")
+                                    + ((i + offset) % 8 === 0 ? " eight" : "")
+                                }
                             >
                                 {row}
                             </div>

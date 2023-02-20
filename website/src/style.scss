@@ -14,6 +14,7 @@
 
   --color-playsym: #484;
   --color-back-played: #464;
+  --color-pattern-8th: #142e38;
   --color-pattern-active: #4d5e60;
 
   --player-bar-small: 4.5rem;
@@ -284,6 +285,9 @@ body {
       .pattern {
         margin: 0 auto;
         .pattern-row {
+          &.eight {
+            background: var(--color-pattern-8th);
+          }
           &.active {
             background: var(--color-pattern-active);
           }
@@ -291,6 +295,17 @@ body {
           div {
             margin-right: .5rem;
           }
+
+          .bright-0 { color: #479; }
+          .bright-1 { color: #589; }
+          .bright-2 { color: #69a; }
+          .bright-3 { color: #7aa; }
+          .bright-4 { color: #8bb; }
+          .bright-5 { color: #9cb; }
+          .bright-6 { color: #acc; }
+          .bright-7 { color: #bdc; }
+          .bright-8 { color: #cdd; }
+          .bright-9 { color: #ded; }
         }
       }
     }
