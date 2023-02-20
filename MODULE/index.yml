@@ -316,7 +316,7 @@
       name: outro
 
 - path: ALONE
-  name: ALONE
+  name: ALONESOM
   description: |
     A lot of drum & base to my dear friends in Forst
   tracks:
@@ -889,7 +889,7 @@
       name: ''
 
 - path: HOAST/TASSE
-  name: about{ hoast} / TASSE
+  name: about{ hoast } / TASSE
   tracks:
     - file: INTRO.S3M
       name: 'intro'

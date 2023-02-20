@@ -217,7 +217,13 @@ const App = () => {
             pattern_visible, set_pattern_visible,
         }}>
             <div className={"app-wrapper" + (pattern_visible ? " big" : "")}>
-                <h3><i>def.gsus-</i> music 1996-2001</h3>
+                <div className={"app-header flex"}>
+                    <div><h3><a href={"https://github.com/defgsus/defgsus-music/"} target={"_blank"}>github</a></h3></div>
+                    <div className={"grow"}/>
+                    <div><h3><i>def.gsus-</i> music 1996-2001</h3></div>
+                    <div className={"grow"}/>
+                    <div><h3><a href={"https://github.com/defgsus/defgsus-music/archive/refs/heads/master.zip"}>download</a></h3></div>
+                </div>
                 <Records/>
             </div>
             <Player/>

@@ -38,6 +38,9 @@ body {
 .flex {
   display: flex;
   flex-direction: row;
+  .grow {
+    flex-grow: 10;
+  }
 }
 
 #app {
@@ -50,6 +53,16 @@ body {
     padding-bottom: var(--player-bar-small);
     &.big {
       padding-bottom: var(--player-bar-big);
+    }
+    .app-header {
+      margin: 0 .5rem;
+      a {
+        color: #66a;
+        &:hover {
+          color: #aaf;
+          text-shadow: 0 0 10px #aaf;
+        }
+      }
     }
   }
 
@@ -89,6 +102,13 @@ body {
     }
   }
 
+  .left-right {
+    display: flex;
+    justify-content: space-between;
+    div { flex-grow: 1; }
+    .right { flex-grow: 0; margin-left: .5rem; }
+  }
+
   @keyframes playSymbolBlink {
     0% {
       background: var(--color-back);
@@ -98,13 +118,6 @@ body {
       background: var(--color-playsym);
       border-radius: 2px;
     }
-  }
-
-  .left-right {
-    display: flex;
-    justify-content: space-between;
-    div { flex-grow: 1; }
-    .right { flex-grow: 0; margin-left: .5rem; }
   }
 
   @keyframes activeInstrument {
@@ -130,6 +143,7 @@ body {
         padding: .3rem;
         display: inline-block;
         cursor: pointer;
+        transition: background-color .3s ease;
         &:hover {
           background: var(--color-face-hl);
         }
@@ -172,6 +186,7 @@ body {
 
           .track {
             padding: .1rem .2rem;
+            transition: background-color .3s ease;
             &:hover {
               background: var(--color-back-hl);
               border-top-right-radius: .5rem;
